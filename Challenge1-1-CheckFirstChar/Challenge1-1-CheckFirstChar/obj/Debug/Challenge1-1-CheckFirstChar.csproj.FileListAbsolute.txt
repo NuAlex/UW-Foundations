@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-1-CheckFirstChar\Challenge1-1-CheckFirstChar\bin\Debug\Challenge1-1-CheckFirstChar.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-1-CheckFirstChar\Challenge1-1-CheckFirstChar\bin\Debug\Challenge1-1-CheckFirstChar.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-1-CheckFirstChar\Challenge1-1-CheckFirstChar\bin\Debug\Challenge1-1-CheckFirstChar.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-1-CheckFirstChar\Challenge1-1-CheckFirstChar\obj\Debug\Challenge1-1-CheckFirstChar.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-1-CheckFirstChar\Challenge1-1-CheckFirstChar\obj\Debug\Challenge1-1-CheckFirstChar.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-1-CheckFirstChar\Challenge1-1-CheckFirstChar\obj\Debug\Challenge1-1-CheckFirstChar.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-1-CheckFirstChar\Challenge1-1-CheckFirstChar\obj\Debug\Challenge1-1-CheckFirstChar.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-1-CheckFirstChar\Challenge1-1-CheckFirstChar\obj\Debug\Challenge1-1-CheckFirstChar.pdb
