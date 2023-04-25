@@ -1,0 +1,8 @@
+C:\Users\nunoa\OneDrive\Source\repos\Lab3-Conversions\Lab3-Conversions\bin\Debug\Lab3-Conversions.exe.config
+C:\Users\nunoa\OneDrive\Source\repos\Lab3-Conversions\Lab3-Conversions\bin\Debug\Lab3-Conversions.exe
+C:\Users\nunoa\OneDrive\Source\repos\Lab3-Conversions\Lab3-Conversions\bin\Debug\Lab3-Conversions.pdb
+C:\Users\nunoa\OneDrive\Source\repos\Lab3-Conversions\Lab3-Conversions\obj\Debug\Lab3-Conversions.csproj.AssemblyReference.cache
+C:\Users\nunoa\OneDrive\Source\repos\Lab3-Conversions\Lab3-Conversions\obj\Debug\Lab3-Conversions.csproj.SuggestedBindingRedirects.cache
+C:\Users\nunoa\OneDrive\Source\repos\Lab3-Conversions\Lab3-Conversions\obj\Debug\Lab3-Conversions.csproj.CoreCompileInputs.cache
+C:\Users\nunoa\OneDrive\Source\repos\Lab3-Conversions\Lab3-Conversions\obj\Debug\Lab3-Conversions.exe
+C:\Users\nunoa\OneDrive\Source\repos\Lab3-Conversions\Lab3-Conversions\obj\Debug\Lab3-Conversions.pdb
