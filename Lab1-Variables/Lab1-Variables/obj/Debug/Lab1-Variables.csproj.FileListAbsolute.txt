@@ -1,0 +1,8 @@
+C:\Users\nunoa\OneDrive\Source\repos\Lab1-Variables\Lab1-Variables\bin\Debug\Lab1-Variables.exe.config
+C:\Users\nunoa\OneDrive\Source\repos\Lab1-Variables\Lab1-Variables\bin\Debug\Lab1-Variables.exe
+C:\Users\nunoa\OneDrive\Source\repos\Lab1-Variables\Lab1-Variables\bin\Debug\Lab1-Variables.pdb
+C:\Users\nunoa\OneDrive\Source\repos\Lab1-Variables\Lab1-Variables\obj\Debug\Lab1-Variables.csproj.AssemblyReference.cache
+C:\Users\nunoa\OneDrive\Source\repos\Lab1-Variables\Lab1-Variables\obj\Debug\Lab1-Variables.csproj.SuggestedBindingRedirects.cache
+C:\Users\nunoa\OneDrive\Source\repos\Lab1-Variables\Lab1-Variables\obj\Debug\Lab1-Variables.csproj.CoreCompileInputs.cache
+C:\Users\nunoa\OneDrive\Source\repos\Lab1-Variables\Lab1-Variables\obj\Debug\Lab1-Variables.exe
+C:\Users\nunoa\OneDrive\Source\repos\Lab1-Variables\Lab1-Variables\obj\Debug\Lab1-Variables.pdb

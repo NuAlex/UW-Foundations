@@ -1,0 +1,8 @@
+C:\Users\nunoa\OneDrive\Source\repos\Lab2-Formatting\Lab2-Formatting\bin\Debug\Lab2-Formatting.exe.config
+C:\Users\nunoa\OneDrive\Source\repos\Lab2-Formatting\Lab2-Formatting\bin\Debug\Lab2-Formatting.exe
+C:\Users\nunoa\OneDrive\Source\repos\Lab2-Formatting\Lab2-Formatting\bin\Debug\Lab2-Formatting.pdb
+C:\Users\nunoa\OneDrive\Source\repos\Lab2-Formatting\Lab2-Formatting\obj\Debug\Lab2-Formatting.csproj.AssemblyReference.cache
+C:\Users\nunoa\OneDrive\Source\repos\Lab2-Formatting\Lab2-Formatting\obj\Debug\Lab2-Formatting.csproj.SuggestedBindingRedirects.cache
+C:\Users\nunoa\OneDrive\Source\repos\Lab2-Formatting\Lab2-Formatting\obj\Debug\Lab2-Formatting.csproj.CoreCompileInputs.cache
+C:\Users\nunoa\OneDrive\Source\repos\Lab2-Formatting\Lab2-Formatting\obj\Debug\Lab2-Formatting.exe
+C:\Users\nunoa\OneDrive\Source\repos\Lab2-Formatting\Lab2-Formatting\obj\Debug\Lab2-Formatting.pdb
