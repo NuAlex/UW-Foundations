@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-FindASCIIvalues\Lab5-FindASCIIvalues\bin\Debug\Lab5-FindASCIIvalues.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-FindASCIIvalues\Lab5-FindASCIIvalues\bin\Debug\Lab5-FindASCIIvalues.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-FindASCIIvalues\Lab5-FindASCIIvalues\bin\Debug\Lab5-FindASCIIvalues.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-FindASCIIvalues\Lab5-FindASCIIvalues\obj\Debug\Lab5-FindASCIIvalues.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-FindASCIIvalues\Lab5-FindASCIIvalues\obj\Debug\Lab5-FindASCIIvalues.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-FindASCIIvalues\Lab5-FindASCIIvalues\obj\Debug\Lab5-FindASCIIvalues.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-FindASCIIvalues\Lab5-FindASCIIvalues\obj\Debug\Lab5-FindASCIIvalues.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-FindASCIIvalues\Lab5-FindASCIIvalues\obj\Debug\Lab5-FindASCIIvalues.pdb
