@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-2-ConvertSeconds\Challenge1-2-ConvertSeconds\obj\Debug\Challenge1-2-ConvertSeconds.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-2-ConvertSeconds\Challenge1-2-ConvertSeconds\obj\Debug\Challenge1-2-ConvertSeconds.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-2-ConvertSeconds\Challenge1-2-ConvertSeconds\obj\Debug\Challenge1-2-ConvertSeconds.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-2-ConvertSeconds\Challenge1-2-ConvertSeconds\bin\Debug\Challenge1-2-ConvertSeconds.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-2-ConvertSeconds\Challenge1-2-ConvertSeconds\bin\Debug\Challenge1-2-ConvertSeconds.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-2-ConvertSeconds\Challenge1-2-ConvertSeconds\bin\Debug\Challenge1-2-ConvertSeconds.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-2-ConvertSeconds\Challenge1-2-ConvertSeconds\obj\Debug\Challenge1-2-ConvertSeconds.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge1-2-ConvertSeconds\Challenge1-2-ConvertSeconds\obj\Debug\Challenge1-2-ConvertSeconds.pdb
