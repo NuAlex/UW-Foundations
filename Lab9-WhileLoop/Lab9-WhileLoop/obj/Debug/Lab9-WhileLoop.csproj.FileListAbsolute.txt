@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab9-WhileLoop\Lab9-WhileLoop\bin\Debug\Lab9-WhileLoop.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab9-WhileLoop\Lab9-WhileLoop\bin\Debug\Lab9-WhileLoop.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab9-WhileLoop\Lab9-WhileLoop\bin\Debug\Lab9-WhileLoop.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab9-WhileLoop\Lab9-WhileLoop\obj\Debug\Lab9-WhileLoop.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab9-WhileLoop\Lab9-WhileLoop\obj\Debug\Lab9-WhileLoop.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab9-WhileLoop\Lab9-WhileLoop\obj\Debug\Lab9-WhileLoop.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab9-WhileLoop\Lab9-WhileLoop\obj\Debug\Lab9-WhileLoop.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab9-WhileLoop\Lab9-WhileLoop\obj\Debug\Lab9-WhileLoop.pdb

@@ -14,6 +14,11 @@ namespace Challenge1_2_ConvertSeconds
             int secondsPerMinute = 60;
             int secondsPerHour = 60 * secondsPerMinute;
             int secondsPerDay = 24 * secondsPerHour;
+            int remaining;
+            int totalDays;
+            int totalHours;
+            int totalMinutes;
+            int totalSeconds;
 
             do
             {
@@ -22,19 +27,28 @@ namespace Challenge1_2_ConvertSeconds
 
                 if (int.TryParse(Console.ReadLine(), out seconds))
                 {
-                    Console.WriteLine("Converting {0} seconds...", seconds);
-                    int TotalDays = seconds / secondsPerDay;
-                    int TotalHours;
-                    int TotalMinutes;
-                    int TotalSeconds;
+                    //Console.WriteLine("Converting {0} seconds...", seconds);
+                    // Calculate Days
+                    totalDays = seconds / secondsPerDay;
+                    
+                    // Calculate Hours
+                    remaining = seconds % secondsPerDay;
+                    totalHours = remaining / secondsPerHour;
 
-                    Console.WriteLine("Result: {0} days, {1} hours, {2} minutes and {3} seconds.", TotalDays, TotalHours, TotalMinutes, TotalSeconds);
+                    // Calculate Minutes
+                    remaining = remaining % secondsPerHour;
+                    totalMinutes = remaining / secondsPerMinute;
+
+                    // Calculate Seconds
+                    totalSeconds = remaining % secondsPerMinute;
+
+                    Console.WriteLine("Result: {0} days, {1} hours, {2} minutes and {3} seconds.", totalDays, totalHours, totalMinutes, totalSeconds);
                 }
                 else
                 {
                     Console.WriteLine("Invalid input!");
                 }
-
+                Console.WriteLine("\nPress CRTL+C to exit.\n");
             } while (true);
 
 
