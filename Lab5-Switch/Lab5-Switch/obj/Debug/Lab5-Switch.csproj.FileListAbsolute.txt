@@ -1,8 +1,0 @@
-D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-Switch\Lab5-Switch\bin\Debug\Lab5-Switch.exe.config
-D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-Switch\Lab5-Switch\bin\Debug\Lab5-Switch.exe
-D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-Switch\Lab5-Switch\bin\Debug\Lab5-Switch.pdb
-D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-Switch\Lab5-Switch\obj\Debug\Lab5-Switch.csproj.AssemblyReference.cache
-D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-Switch\Lab5-Switch\obj\Debug\Lab5-Switch.csproj.SuggestedBindingRedirects.cache
-D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-Switch\Lab5-Switch\obj\Debug\Lab5-Switch.csproj.CoreCompileInputs.cache
-D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-Switch\Lab5-Switch\obj\Debug\Lab5-Switch.exe
-D:\Users\NunoA\Source\Repos\UW-Foundations\Lab5-Switch\Lab5-Switch\obj\Debug\Lab5-Switch.pdb
