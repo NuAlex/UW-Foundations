@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab10-ForLoop\Lab10-ForLoop\obj\Debug\Lab10-ForLoop.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab10-ForLoop\Lab10-ForLoop\obj\Debug\Lab10-ForLoop.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab10-ForLoop\Lab10-ForLoop\obj\Debug\Lab10-ForLoop.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab10-ForLoop\Lab10-ForLoop\bin\Debug\Lab10-ForLoop.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab10-ForLoop\Lab10-ForLoop\bin\Debug\Lab10-ForLoop.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab10-ForLoop\Lab10-ForLoop\bin\Debug\Lab10-ForLoop.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab10-ForLoop\Lab10-ForLoop\obj\Debug\Lab10-ForLoop.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab10-ForLoop\Lab10-ForLoop\obj\Debug\Lab10-ForLoop.pdb

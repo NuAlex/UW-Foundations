@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab7-FindSmith\Lab7-FindSmith\bin\Debug\Lab7-FindSmith.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab7-FindSmith\Lab7-FindSmith\bin\Debug\Lab7-FindSmith.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab7-FindSmith\Lab7-FindSmith\bin\Debug\Lab7-FindSmith.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab7-FindSmith\Lab7-FindSmith\obj\Debug\Lab7-FindSmith.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab7-FindSmith\Lab7-FindSmith\obj\Debug\Lab7-FindSmith.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab7-FindSmith\Lab7-FindSmith\obj\Debug\Lab7-FindSmith.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab7-FindSmith\Lab7-FindSmith\obj\Debug\Lab7-FindSmith.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab7-FindSmith\Lab7-FindSmith\obj\Debug\Lab7-FindSmith.pdb
