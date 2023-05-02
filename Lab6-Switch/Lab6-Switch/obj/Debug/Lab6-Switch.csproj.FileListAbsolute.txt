@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab6-Switch\Lab6-Switch\bin\Debug\Lab6-Switch.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab6-Switch\Lab6-Switch\bin\Debug\Lab6-Switch.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab6-Switch\Lab6-Switch\bin\Debug\Lab6-Switch.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab6-Switch\Lab6-Switch\obj\Debug\Lab6-Switch.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab6-Switch\Lab6-Switch\obj\Debug\Lab6-Switch.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab6-Switch\Lab6-Switch\obj\Debug\Lab6-Switch.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab6-Switch\Lab6-Switch\obj\Debug\Lab6-Switch.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab6-Switch\Lab6-Switch\obj\Debug\Lab6-Switch.pdb

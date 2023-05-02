@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab8-Enum\Lab8-Enum\bin\Debug\Lab8-Enum.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab8-Enum\Lab8-Enum\bin\Debug\Lab8-Enum.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab8-Enum\Lab8-Enum\bin\Debug\Lab8-Enum.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab8-Enum\Lab8-Enum\obj\Debug\Lab8-Enum.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab8-Enum\Lab8-Enum\obj\Debug\Lab8-Enum.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab8-Enum\Lab8-Enum\obj\Debug\Lab8-Enum.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab8-Enum\Lab8-Enum\obj\Debug\Lab8-Enum.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab8-Enum\Lab8-Enum\obj\Debug\Lab8-Enum.pdb
