@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework03-ComplexCalcs\Homework03-ComplexCalcs\bin\Debug\Homework03-ComplexCalcs.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework03-ComplexCalcs\Homework03-ComplexCalcs\bin\Debug\Homework03-ComplexCalcs.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework03-ComplexCalcs\Homework03-ComplexCalcs\bin\Debug\Homework03-ComplexCalcs.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework03-ComplexCalcs\Homework03-ComplexCalcs\obj\Debug\Homework03-ComplexCalcs.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework03-ComplexCalcs\Homework03-ComplexCalcs\obj\Debug\Homework03-ComplexCalcs.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework03-ComplexCalcs\Homework03-ComplexCalcs\obj\Debug\Homework03-ComplexCalcs.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework03-ComplexCalcs\Homework03-ComplexCalcs\obj\Debug\Homework03-ComplexCalcs.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework03-ComplexCalcs\Homework03-ComplexCalcs\obj\Debug\Homework03-ComplexCalcs.pdb
