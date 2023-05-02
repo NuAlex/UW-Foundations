@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework04-Loops\Homework04-Loops\obj\Debug\Homework04-Loops.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework04-Loops\Homework04-Loops\obj\Debug\Homework04-Loops.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework04-Loops\Homework04-Loops\obj\Debug\Homework04-Loops.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework04-Loops\Homework04-Loops\bin\Debug\Homework04-Loops.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework04-Loops\Homework04-Loops\bin\Debug\Homework04-Loops.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework04-Loops\Homework04-Loops\bin\Debug\Homework04-Loops.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework04-Loops\Homework04-Loops\obj\Debug\Homework04-Loops.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework04-Loops\Homework04-Loops\obj\Debug\Homework04-Loops.pdb

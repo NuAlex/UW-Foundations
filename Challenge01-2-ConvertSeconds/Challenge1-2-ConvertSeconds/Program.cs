@@ -8,7 +8,7 @@ namespace Challenge1_2_ConvertSeconds
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
 
             int secondsPerMinute = 60;
