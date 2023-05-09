@@ -1,7 +1,7 @@
-﻿// Lab - Search Arrays
-using System;
+﻿using System;
 
-namespace Lab11_SearchArrays
+
+namespace Lab12a_ForEachLoop2
 {
     internal class Program
     {
@@ -14,20 +14,16 @@ namespace Lab11_SearchArrays
                 Console.Write("Enter a number:");
                 string str = Console.ReadLine();
 
-                // TODO: convert input string into a number
                 int input = int.Parse(str);
-
-                // TODO: set a boolean flag named "found"
                 bool found = false;
 
                 // use for to look for the number
-                for (int i = 0; i < numbers.Length; i++)
+                foreach (int x in numbers)
                 {
-                    // TODO: if number is found set found flag to true and exit the loop
-                    if (numbers[i] == input)
-                    {
-                        found = true;
-                        break;
+                    if (x == input)
+                    { 
+                        found = true; 
+                        break; 
                     }
                 }
 

@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab11-SearchArrays\Lab11-SearchArrays\bin\Debug\Lab11-SearchArrays.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab11-SearchArrays\Lab11-SearchArrays\bin\Debug\Lab11-SearchArrays.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab11-SearchArrays\Lab11-SearchArrays\bin\Debug\Lab11-SearchArrays.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab11-SearchArrays\Lab11-SearchArrays\obj\Debug\Lab11-SearchArrays.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab11-SearchArrays\Lab11-SearchArrays\obj\Debug\Lab11-SearchArrays.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab11-SearchArrays\Lab11-SearchArrays\obj\Debug\Lab11-SearchArrays.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab11-SearchArrays\Lab11-SearchArrays\obj\Debug\Lab11-SearchArrays.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab11-SearchArrays\Lab11-SearchArrays\obj\Debug\Lab11-SearchArrays.pdb
