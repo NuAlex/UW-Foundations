@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab13-VariablesVsObjectType\Lab13-VariablesVsObjectType\bin\Debug\Lab13-VariablesVsObjectType.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab13-VariablesVsObjectType\Lab13-VariablesVsObjectType\bin\Debug\Lab13-VariablesVsObjectType.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab13-VariablesVsObjectType\Lab13-VariablesVsObjectType\bin\Debug\Lab13-VariablesVsObjectType.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab13-VariablesVsObjectType\Lab13-VariablesVsObjectType\obj\Debug\Lab13-VariablesVsObjectType.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab13-VariablesVsObjectType\Lab13-VariablesVsObjectType\obj\Debug\Lab13-VariablesVsObjectType.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab13-VariablesVsObjectType\Lab13-VariablesVsObjectType\obj\Debug\Lab13-VariablesVsObjectType.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab13-VariablesVsObjectType\Lab13-VariablesVsObjectType\obj\Debug\Lab13-VariablesVsObjectType.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab13-VariablesVsObjectType\Lab13-VariablesVsObjectType\obj\Debug\Lab13-VariablesVsObjectType.pdb
