@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab12-ForEachLoop\Lab12-ForEachLoop\bin\Debug\Lab12-ForEachLoop.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab12-ForEachLoop\Lab12-ForEachLoop\bin\Debug\Lab12-ForEachLoop.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab12-ForEachLoop\Lab12-ForEachLoop\bin\Debug\Lab12-ForEachLoop.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab12-ForEachLoop\Lab12-ForEachLoop\obj\Debug\Lab12-ForEachLoop.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab12-ForEachLoop\Lab12-ForEachLoop\obj\Debug\Lab12-ForEachLoop.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab12-ForEachLoop\Lab12-ForEachLoop\obj\Debug\Lab12-ForEachLoop.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab12-ForEachLoop\Lab12-ForEachLoop\obj\Debug\Lab12-ForEachLoop.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab12-ForEachLoop\Lab12-ForEachLoop\obj\Debug\Lab12-ForEachLoop.pdb
