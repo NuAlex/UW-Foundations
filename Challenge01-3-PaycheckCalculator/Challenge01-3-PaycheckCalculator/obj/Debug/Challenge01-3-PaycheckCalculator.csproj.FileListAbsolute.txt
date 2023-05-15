@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-3-PaycheckCalculator\Challenge01-3-PaycheckCalculator\bin\Debug\Challenge01-3-PaycheckCalculator.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-3-PaycheckCalculator\Challenge01-3-PaycheckCalculator\bin\Debug\Challenge01-3-PaycheckCalculator.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-3-PaycheckCalculator\Challenge01-3-PaycheckCalculator\bin\Debug\Challenge01-3-PaycheckCalculator.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-3-PaycheckCalculator\Challenge01-3-PaycheckCalculator\obj\Debug\Challenge01-3-PaycheckCalculator.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-3-PaycheckCalculator\Challenge01-3-PaycheckCalculator\obj\Debug\Challenge01-3-PaycheckCalculator.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-3-PaycheckCalculator\Challenge01-3-PaycheckCalculator\obj\Debug\Challenge01-3-PaycheckCalculator.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-3-PaycheckCalculator\Challenge01-3-PaycheckCalculator\obj\Debug\Challenge01-3-PaycheckCalculator.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-3-PaycheckCalculator\Challenge01-3-PaycheckCalculator\obj\Debug\Challenge01-3-PaycheckCalculator.pdb
