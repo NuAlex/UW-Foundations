@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab15-BankAccountClass\Lab15-BankAccountClass\bin\Debug\Lab15-BankAccountClass.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab15-BankAccountClass\Lab15-BankAccountClass\bin\Debug\Lab15-BankAccountClass.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab15-BankAccountClass\Lab15-BankAccountClass\bin\Debug\Lab15-BankAccountClass.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab15-BankAccountClass\Lab15-BankAccountClass\obj\Debug\Lab15-BankAccountClass.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab15-BankAccountClass\Lab15-BankAccountClass\obj\Debug\Lab15-BankAccountClass.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab15-BankAccountClass\Lab15-BankAccountClass\obj\Debug\Lab15-BankAccountClass.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab15-BankAccountClass\Lab15-BankAccountClass\obj\Debug\Lab15-BankAccountClass.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab15-BankAccountClass\Lab15-BankAccountClass\obj\Debug\Lab15-BankAccountClass.pdb

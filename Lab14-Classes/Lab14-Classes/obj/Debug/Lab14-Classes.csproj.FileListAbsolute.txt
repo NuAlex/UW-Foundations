@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab14-Classes\Lab14-Classes\bin\Debug\Lab14-Classes.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab14-Classes\Lab14-Classes\bin\Debug\Lab14-Classes.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab14-Classes\Lab14-Classes\bin\Debug\Lab14-Classes.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab14-Classes\Lab14-Classes\obj\Debug\Lab14-Classes.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab14-Classes\Lab14-Classes\obj\Debug\Lab14-Classes.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab14-Classes\Lab14-Classes\obj\Debug\Lab14-Classes.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab14-Classes\Lab14-Classes\obj\Debug\Lab14-Classes.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab14-Classes\Lab14-Classes\obj\Debug\Lab14-Classes.pdb
