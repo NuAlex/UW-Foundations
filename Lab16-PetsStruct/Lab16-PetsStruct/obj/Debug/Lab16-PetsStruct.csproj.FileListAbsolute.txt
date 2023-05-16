@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab16-PetsStruct\Lab16-PetsStruct\obj\Debug\Lab16-PetsStruct.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab16-PetsStruct\Lab16-PetsStruct\obj\Debug\Lab16-PetsStruct.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab16-PetsStruct\Lab16-PetsStruct\obj\Debug\Lab16-PetsStruct.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab16-PetsStruct\Lab16-PetsStruct\bin\Debug\Lab16-PetsStruct.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab16-PetsStruct\Lab16-PetsStruct\bin\Debug\Lab16-PetsStruct.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab16-PetsStruct\Lab16-PetsStruct\bin\Debug\Lab16-PetsStruct.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab16-PetsStruct\Lab16-PetsStruct\obj\Debug\Lab16-PetsStruct.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab16-PetsStruct\Lab16-PetsStruct\obj\Debug\Lab16-PetsStruct.pdb
