@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-4-PronounceMoney\Challenge01-4-PronounceMoney\obj\Debug\Challenge01-4-PronounceMoney.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-4-PronounceMoney\Challenge01-4-PronounceMoney\obj\Debug\Challenge01-4-PronounceMoney.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-4-PronounceMoney\Challenge01-4-PronounceMoney\obj\Debug\Challenge01-4-PronounceMoney.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-4-PronounceMoney\Challenge01-4-PronounceMoney\bin\Debug\Challenge01-4-PronounceMoney.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-4-PronounceMoney\Challenge01-4-PronounceMoney\bin\Debug\Challenge01-4-PronounceMoney.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-4-PronounceMoney\Challenge01-4-PronounceMoney\bin\Debug\Challenge01-4-PronounceMoney.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-4-PronounceMoney\Challenge01-4-PronounceMoney\obj\Debug\Challenge01-4-PronounceMoney.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge01-4-PronounceMoney\Challenge01-4-PronounceMoney\obj\Debug\Challenge01-4-PronounceMoney.pdb
