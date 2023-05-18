@@ -6,3 +6,11 @@ C:\Users\nunoa\OneDrive\Source\repos\Homework2-HelloWorld\Homework2-HelloWorld\o
 C:\Users\nunoa\OneDrive\Source\repos\Homework2-HelloWorld\Homework2-HelloWorld\obj\Debug\Homework2-HelloWorld.csproj.CoreCompileInputs.cache
 C:\Users\nunoa\OneDrive\Source\repos\Homework2-HelloWorld\Homework2-HelloWorld\obj\Debug\Homework2-HelloWorld.exe
 C:\Users\nunoa\OneDrive\Source\repos\Homework2-HelloWorld\Homework2-HelloWorld\obj\Debug\Homework2-HelloWorld.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework02-HelloWorld\Homework2-HelloWorld\bin\Debug\Homework2-HelloWorld.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework02-HelloWorld\Homework2-HelloWorld\bin\Debug\Homework2-HelloWorld.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework02-HelloWorld\Homework2-HelloWorld\bin\Debug\Homework2-HelloWorld.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework02-HelloWorld\Homework2-HelloWorld\obj\Debug\Homework2-HelloWorld.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework02-HelloWorld\Homework2-HelloWorld\obj\Debug\Homework2-HelloWorld.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework02-HelloWorld\Homework2-HelloWorld\obj\Debug\Homework2-HelloWorld.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework02-HelloWorld\Homework2-HelloWorld\obj\Debug\Homework2-HelloWorld.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework02-HelloWorld\Homework2-HelloWorld\obj\Debug\Homework2-HelloWorld.pdb
