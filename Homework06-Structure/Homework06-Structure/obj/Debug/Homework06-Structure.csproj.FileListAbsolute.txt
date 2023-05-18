@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework06-Structure\Homework06-Structure\bin\Debug\Homework06-Structure.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework06-Structure\Homework06-Structure\bin\Debug\Homework06-Structure.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework06-Structure\Homework06-Structure\bin\Debug\Homework06-Structure.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework06-Structure\Homework06-Structure\obj\Debug\Homework06-Structure.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework06-Structure\Homework06-Structure\obj\Debug\Homework06-Structure.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework06-Structure\Homework06-Structure\obj\Debug\Homework06-Structure.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework06-Structure\Homework06-Structure\obj\Debug\Homework06-Structure.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Homework06-Structure\Homework06-Structure\obj\Debug\Homework06-Structure.pdb
