@@ -65,6 +65,8 @@ namespace Homework06_Structure
             var numberOfPets = 0;
             var maxPetsCount = 10;
             var pets = new Pet[maxPetsCount];
+            
+            // TESTING DATA
             var newPet = new Pet
             {
                 // Test
@@ -74,6 +76,16 @@ namespace Homework06_Structure
             pets[numberOfPets] = newPet;
             numberOfPets++;
 
+            newPet = new Pet
+            {
+                // Test
+                Name = "Mel",
+                TypeOfPet = "Portuguese Water Dog"
+            };
+            pets[numberOfPets] = newPet;
+            numberOfPets++;
+
+            // BEGIN
             while (true)
             {
                 Console.Write("(A)dd  |  (C)hange  |  (D)elete  |  (L)ist pets  |  e(X)it: ");
@@ -154,13 +166,6 @@ namespace Homework06_Structure
                                 ListPets(pets, numberOfPets);
 
                                 var petIndex = SelectPet(pets, numberOfPets, "remove");
-
-                                /*
-                                Console.Write("Which pet to remove (1-{0})? ", numberOfPets);
-
-                                var petInput = Console.ReadLine();
-                                var petIndex = int.Parse(petInput);
-                                */
 
                                 if (petIndex > 0)
                                 {
