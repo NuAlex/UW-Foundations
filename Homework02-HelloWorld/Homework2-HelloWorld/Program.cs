@@ -1,4 +1,7 @@
 ﻿using System;
+/*
+ * First Program - Hello World
+ */
 
 namespace Homework2_HelloWorld
 {
@@ -6,7 +9,10 @@ namespace Homework2_HelloWorld
     {
         static void Main()
         {
-            Console.WriteLine("Hello World! Nuno");
+
+            // A variable name may begin with an underscore ( _ ).     
+            string _str = "Hello World! Nuno";
+            Console.WriteLine(_str);
             Console.ReadLine();
         }
     }
