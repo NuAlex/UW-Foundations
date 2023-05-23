@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab17-RefAndOut\Lab17-RefAndOut\obj\Debug\Lab17-RefAndOut.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab17-RefAndOut\Lab17-RefAndOut\obj\Debug\Lab17-RefAndOut.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab17-RefAndOut\Lab17-RefAndOut\obj\Debug\Lab17-RefAndOut.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab17-RefAndOut\Lab17-RefAndOut\bin\Debug\Lab17-RefAndOut.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab17-RefAndOut\Lab17-RefAndOut\bin\Debug\Lab17-RefAndOut.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab17-RefAndOut\Lab17-RefAndOut\bin\Debug\Lab17-RefAndOut.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab17-RefAndOut\Lab17-RefAndOut\obj\Debug\Lab17-RefAndOut.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab17-RefAndOut\Lab17-RefAndOut\obj\Debug\Lab17-RefAndOut.pdb
