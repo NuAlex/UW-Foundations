@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab19-ClassTelevisionWithProperties\Lab19-ClassTelevisionWithProperties\bin\Debug\Lab19-ClassTelevisionWithProperties.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab19-ClassTelevisionWithProperties\Lab19-ClassTelevisionWithProperties\bin\Debug\Lab19-ClassTelevisionWithProperties.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab19-ClassTelevisionWithProperties\Lab19-ClassTelevisionWithProperties\bin\Debug\Lab19-ClassTelevisionWithProperties.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab19-ClassTelevisionWithProperties\Lab19-ClassTelevisionWithProperties\obj\Debug\Lab19-ClassTelevisionWithProperties.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab19-ClassTelevisionWithProperties\Lab19-ClassTelevisionWithProperties\obj\Debug\Lab19-ClassTelevisionWithProperties.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab19-ClassTelevisionWithProperties\Lab19-ClassTelevisionWithProperties\obj\Debug\Lab19-ClassTelevisionWithProperties.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab19-ClassTelevisionWithProperties\Lab19-ClassTelevisionWithProperties\obj\Debug\Lab19-ClassTelevisionWithProperties.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab19-ClassTelevisionWithProperties\Lab19-ClassTelevisionWithProperties\obj\Debug\Lab19-ClassTelevisionWithProperties.pdb
