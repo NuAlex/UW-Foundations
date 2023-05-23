@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Homework05-ExplorationSelfExam1\Homework05-ExplorationSelfExam1\bin\Debug\Homework05-ExplorationSelfExam1.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Homework05-ExplorationSelfExam1\Homework05-ExplorationSelfExam1\bin\Debug\Homework05-ExplorationSelfExam1.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Homework05-ExplorationSelfExam1\Homework05-ExplorationSelfExam1\bin\Debug\Homework05-ExplorationSelfExam1.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Homework05-ExplorationSelfExam1\Homework05-ExplorationSelfExam1\obj\Debug\Homework05-ExplorationSelfExam1.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Homework05-ExplorationSelfExam1\Homework05-ExplorationSelfExam1\obj\Debug\Homework05-ExplorationSelfExam1.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Homework05-ExplorationSelfExam1\Homework05-ExplorationSelfExam1\obj\Debug\Homework05-ExplorationSelfExam1.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Homework05-ExplorationSelfExam1\Homework05-ExplorationSelfExam1\obj\Debug\Homework05-ExplorationSelfExam1.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Homework05-ExplorationSelfExam1\Homework05-ExplorationSelfExam1\obj\Debug\Homework05-ExplorationSelfExam1.pdb

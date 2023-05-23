@@ -63,6 +63,7 @@ namespace Homework05_ExplorationSelfExam1
 
         static void Main()
         {
+            Console.WriteLine("--- Question #29:");
             //Stack<int> stack = new Stack<int> ();
             MyStack stack = new MyStack();
 
@@ -80,6 +81,35 @@ namespace Homework05_ExplorationSelfExam1
                 Console.Write("{0}", stack.Pop());
             }
             Console.WriteLine();
+
+
+            Console.WriteLine("--- Question #24. Check if the following if expressions below result in TRUE or FALSE? (5 points)?");
+            //A.
+            int usCnt, usSum;
+
+            usCnt = 10; usSum = 10;
+            if (usSum++ == usCnt)
+            {
+                Console.WriteLine("A is TRUE");
+            }
+            else
+            {
+                Console.WriteLine("A is FALSE");
+            }
+            // A is TRUE
+
+            //B.
+            usCnt = 10; usSum = 10;
+            if (usSum == ++usCnt)
+            {
+                Console.WriteLine("B is TRUE");
+            }
+            else
+            {
+                Console.WriteLine("B is FALSE");
+            }
+            // B is FALSE
+
 
             Console.ReadLine();
         }
