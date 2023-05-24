@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 
 namespace Pilot01_Collections
@@ -42,6 +44,39 @@ namespace Pilot01_Collections
             {
                 Console.WriteLine("The value {0} is not found in Dictionary!", findValue);
             }
+
+            //
+            OrderedDictionary oDic = new OrderedDictionary();
+            oDic.Add("one", 1);
+            oDic.Add("two", 2);
+            //oDic.Add("tree", 2); // causes an exception
+            oDic.Add("tree", 3);
+
+            foreach (DictionaryEntry de in oDic)
+            {
+                Console.Write(de.Key);
+                Console.Write(" | ");
+                Console.WriteLine(de.Value);
+                
+            }
+            Console.WriteLine("Key value for 'two': {0}", oDic["hundred"]);
+                        
+            Console.WriteLine("Contains Key 'ten': {0}", oDic.Contains("ten"));
+            Console.WriteLine("Contains Value '10': {0}", oDic.Contains(10));
+            Console.WriteLine("oDic Count: {0}", oDic.Count);
+
+            /* cannot use FirstOrDefault
+            var myKey2 = oDic.FirstOrDefault(x => x.Value == 1000).Key;
+            Console.WriteLine("Get Key from Value '1000' : {0}", myKey2);
+
+            var findValue2 = 2;
+            var missingKey2 = oDic.FirstOrDefault(x => x.Value == findValue2).Key;
+            Console.WriteLine("Get Key from Value '2' (non-existing): {0}", missingKey2);
+            if (null == missingKey2)
+            {
+                Console.WriteLine("The value {0} is not found in oDictionary!", findValue2);
+            }
+            */
             Console.ReadLine();
 
         }
