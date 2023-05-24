@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot01-Collections\Pilot01-Collections\obj\Debug\Pilot01-Collections.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot01-Collections\Pilot01-Collections\obj\Debug\Pilot01-Collections.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot01-Collections\Pilot01-Collections\obj\Debug\Pilot01-Collections.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot01-Collections\Pilot01-Collections\bin\Debug\Pilot01-Collections.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot01-Collections\Pilot01-Collections\bin\Debug\Pilot01-Collections.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot01-Collections\Pilot01-Collections\bin\Debug\Pilot01-Collections.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot01-Collections\Pilot01-Collections\obj\Debug\Pilot01-Collections.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot01-Collections\Pilot01-Collections\obj\Debug\Pilot01-Collections.pdb
