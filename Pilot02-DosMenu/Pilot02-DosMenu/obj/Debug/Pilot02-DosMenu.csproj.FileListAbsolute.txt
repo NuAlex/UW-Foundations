@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot02-DosMenu\Pilot02-DosMenu\bin\Debug\Pilot02-DosMenu.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot02-DosMenu\Pilot02-DosMenu\bin\Debug\Pilot02-DosMenu.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot02-DosMenu\Pilot02-DosMenu\bin\Debug\Pilot02-DosMenu.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot02-DosMenu\Pilot02-DosMenu\obj\Debug\Pilot02-DosMenu.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot02-DosMenu\Pilot02-DosMenu\obj\Debug\Pilot02-DosMenu.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot02-DosMenu\Pilot02-DosMenu\obj\Debug\Pilot02-DosMenu.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot02-DosMenu\Pilot02-DosMenu\obj\Debug\Pilot02-DosMenu.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Pilot02-DosMenu\Pilot02-DosMenu\obj\Debug\Pilot02-DosMenu.pdb
