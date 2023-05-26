@@ -1,0 +1,11 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\obj\Debug\Challenge02-WindowsFormsApp.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\obj\Debug\Challenge02-WindowsFormsApp.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\obj\Debug\Challenge02_WindowsFormsApp.Form1.resources
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\obj\Debug\Challenge02_WindowsFormsApp.Properties.Resources.resources
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\obj\Debug\Challenge02-WindowsFormsApp.csproj.GenerateResource.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\obj\Debug\Challenge02-WindowsFormsApp.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\bin\Debug\Challenge02-WindowsFormsApp.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\bin\Debug\Challenge02-WindowsFormsApp.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\bin\Debug\Challenge02-WindowsFormsApp.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\obj\Debug\Challenge02-WindowsFormsApp.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Challenge02-WindowsFormsApp\Challenge02-WindowsFormsApp\obj\Debug\Challenge02-WindowsFormsApp.pdb
