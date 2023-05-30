@@ -78,27 +78,135 @@ namespace Challenge01_4_PronounceMoney
             return count;
         }
 
+
+        static decimal MaxUnitValue(OrderedDictionary dic)
+        {
+            // returns the first value of the OrderedDictionary
+            var first = dic.GetEnumerator();
+            first.MoveNext();
+            DictionaryEntry maxUnit = (DictionaryEntry)first.Current;
+            return (decimal) maxUnit.Value;
+        }
+
+
+
         static void Main()
         {
             OrderedDictionary units = new OrderedDictionary();
-
             units.Add((string) "Bazillion", (decimal) 1000000000000000);
             units.Add((string) "Trillion",  (decimal) 1000000000000);
             units.Add((string) "Billion",   (decimal) 1000000000);
             units.Add((string) "Million",   (decimal) 1000000);
             units.Add((string) "Thousand",  (decimal) 1000);
-            //units.Add((string) "Hundred",   (decimal) 100);
-            PrintUnits(units);
+            units.Add((string) "Dollars",   (decimal) 1);
+            //PrintUnits(units);
+
+            Dictionary<int, string> translateNumbers = new Dictionary<int, string>();
+            translateNumbers.Add(1, "one");
+            translateNumbers.Add(2, "two");
+            translateNumbers.Add(3, "three");
+            translateNumbers.Add(4, "four");
+            translateNumbers.Add(5, "five");
+            translateNumbers.Add(6, "six");
+            translateNumbers.Add(7, "seven");
+            translateNumbers.Add(8, "eight");
+            translateNumbers.Add(9, "nine");
+            translateNumbers.Add(10, "ten");
+            translateNumbers.Add(11, "eleven");
+            translateNumbers.Add(12, "twelve");
+            translateNumbers.Add(13, "thirteen");
+            translateNumbers.Add(14, "fourteen");
+            translateNumbers.Add(15, "fifteen");
+            translateNumbers.Add(16, "sixteen");
+            translateNumbers.Add(17, "seventeen");
+            translateNumbers.Add(18, "eighteen");
+            translateNumbers.Add(19, "nineteen");
+            translateNumbers.Add(20, "twenty");
+            translateNumbers.Add(21, "twenty-one");
+            translateNumbers.Add(22, "twenty-two");
+            translateNumbers.Add(23, "twenty-three");
+            translateNumbers.Add(24, "twenty-four");
+            translateNumbers.Add(25, "twenty-five");
+            translateNumbers.Add(26, "twenty-six");
+            translateNumbers.Add(27, "twenty-seven");
+            translateNumbers.Add(28, "twenty-eight");
+            translateNumbers.Add(29, "twenty-nine");
+            translateNumbers.Add(30, "thirty");
+            translateNumbers.Add(31, "thirty-one");
+            translateNumbers.Add(32, "thirty-two");
+            translateNumbers.Add(33, "thirty-three");
+            translateNumbers.Add(34, "thirty-four");
+            translateNumbers.Add(35, "thirty-five");
+            translateNumbers.Add(36, "thirty-six");
+            translateNumbers.Add(37, "thirty-seven");
+            translateNumbers.Add(38, "thirty-eight");
+            translateNumbers.Add(39, "thirty-nine");
+            translateNumbers.Add(40, "forty");
+            translateNumbers.Add(41, "forty-one");
+            translateNumbers.Add(42, "forty-two");
+            translateNumbers.Add(43, "forty-three");
+            translateNumbers.Add(44, "forty-four");
+            translateNumbers.Add(45, "forty-five");
+            translateNumbers.Add(46, "forty-six");
+            translateNumbers.Add(47, "forty-seven");
+            translateNumbers.Add(48, "forty-eight");
+            translateNumbers.Add(49, "forty-nine");
+            translateNumbers.Add(50, "fifty");
+            translateNumbers.Add(51, "fifty-one");
+            translateNumbers.Add(52, "fifty-two");
+            translateNumbers.Add(53, "fifty-three");
+            translateNumbers.Add(54, "fifty-four");
+            translateNumbers.Add(55, "fifty-five");
+            translateNumbers.Add(56, "fifty-six");
+            translateNumbers.Add(57, "fifty-seven");
+            translateNumbers.Add(58, "fifty-eight");
+            translateNumbers.Add(59, "fifty-nine");
+            translateNumbers.Add(60, "sixty");
+            translateNumbers.Add(61, "sixty-one");
+            translateNumbers.Add(62, "sixty-two");
+            translateNumbers.Add(63, "sixty-three");
+            translateNumbers.Add(64, "sixty-four");
+            translateNumbers.Add(65, "sixty-five");
+            translateNumbers.Add(66, "sixty-six");
+            translateNumbers.Add(67, "sixty-seven");
+            translateNumbers.Add(68, "sixty-eight");
+            translateNumbers.Add(69, "sixty-nine");
+            translateNumbers.Add(70, "seventy");
+            translateNumbers.Add(71, "seventy-one");
+            translateNumbers.Add(72, "seventy-two");
+            translateNumbers.Add(73, "seventy-three");
+            translateNumbers.Add(74, "seventy-four");
+            translateNumbers.Add(75, "seventy-five");
+            translateNumbers.Add(76, "seventy-six");
+            translateNumbers.Add(77, "seventy-seven");
+            translateNumbers.Add(78, "seventy-eight");
+            translateNumbers.Add(79, "seventy-nine");
+            translateNumbers.Add(80, "eighty");
+            translateNumbers.Add(81, "eighty-one");
+            translateNumbers.Add(82, "eighty-two");
+            translateNumbers.Add(83, "eighty-three");
+            translateNumbers.Add(84, "eighty-four");
+            translateNumbers.Add(85, "eighty-five");
+            translateNumbers.Add(86, "eighty-six");
+            translateNumbers.Add(87, "eighty-seven");
+            translateNumbers.Add(88, "eighty-eight");
+            translateNumbers.Add(89, "eighty-nine");
+            translateNumbers.Add(90, "ninety");
+            translateNumbers.Add(91, "ninety-one");
+            translateNumbers.Add(92, "ninety-two");
+            translateNumbers.Add(93, "ninety-three");
+            translateNumbers.Add(94, "ninety-four");
+            translateNumbers.Add(95, "ninety-five");
+            translateNumbers.Add(96, "ninety-six");
+            translateNumbers.Add(97, "ninety-seven");
+            translateNumbers.Add(98, "ninety-eight");
+            translateNumbers.Add(99, "ninety-nine");
+            //Console.WriteLine("Debug : {0}", translateNumbers[1]);
 
             bool validInput;
-
             decimal amount;
-            decimal amountInteger;
             decimal truncate;
             decimal remaining;
-            
-            decimal millions;
-            decimal thousands;
             decimal hundreds;
             decimal cents;
 
@@ -107,17 +215,22 @@ namespace Challenge01_4_PronounceMoney
                 Console.Write("Please introduce the amount to money ($):");
                 validInput = decimal.TryParse(Console.ReadLine(), out amount);
 
+                // Validate maximum value
+                // DictionaryEntry maxUnit = new DictionaryEntry();
+                //maxUnit = units[0];
+                if (amount > MaxUnitValue(units) * 1000)
+                {
+                    validInput = false;
+                    Console.Write("Amount too high! ");
+                }
+
                 if (validInput)
                 {
                     // Handle Cents
-                    //amountInteger = (int) Math.Truncate(amount);
-                    //cents = (int) ((amount - amountInteger) * 100);
-                    amountInteger = GetWholeValue(amount);
+                    remaining = GetWholeValue(amount);
                     cents = GetFractionalValueAsWholeNumber(amount, 100);
-                    //Console.WriteLine("{0} and {1} cents", amountInteger, cents);
 
-                    remaining = amountInteger;
-                    // Handle Bazillions to Thousands
+                    // Got from Bazillions to Hundreds
                     foreach (DictionaryEntry unit in units)
                     {
                         truncate = GetWholeValue(remaining / (decimal)unit.Value);
@@ -126,53 +239,24 @@ namespace Challenge01_4_PronounceMoney
                             // move floating point to next unit
                             remaining = remaining - (truncate * (decimal)unit.Value);
 
-                            // Handle Unit
-                            //Console.WriteLine("++ {0}", truncate);
-
                             // Handle hundreds
                             hundreds = truncate / 100;
                             if (hundreds > 1)
                             {
-                                Console.Write(" {0} hundred and", GetWholeValue(hundreds));
+                                Console.Write("{0} Hundred and ", translateNumbers[(int) GetWholeValue(hundreds)]);
                             }
-                            Console.Write(" {0}", GetFractionalValueAsWholeNumber(hundreds, 0));
+                            Console.Write("{0} ", translateNumbers[(int) GetFractionalValueAsWholeNumber(hundreds, 0)]);
 
-                            Console.Write(" {0}", unit.Key.ToString());
+                            Console.Write("{0}, ", unit.Key.ToString());
                         }
                         
                     }
 
                     if (cents > 0)
                     {
-                        Console.Write("{0} Dollars and {0} cents.", amountInteger);
-                    }
-                    else
-                    {
-                        Console.Write("and {0} Dollars.", amountInteger);
+                        Console.Write("and {0} cents.", translateNumbers[(int) cents]);
                     }
 
-                    /*
-                    millions = (int) Math.Truncate(amountInteger / 1000000);
-                    if ( millions > 0 )
-                    {
-                        Console.Write("{0} Million, ", millions);
-                        amountInteger -= (millions * 1000000);
-                    }
-
-                    thousands = (int) Math.Truncate(amountInteger / 1000);
-                    if (thousands > 0)
-                    {
-                        Console.Write("{0} Thousand, ", thousands);
-                        amountInteger -= (thousands * 1000);
-                    }
-
-                    hundreds = (int)Math.Truncate(amountInteger / 100);
-                    if (hundreds > 0)
-                    {
-                        Console.Write("{0} Hundred, ", hundreds);
-                        amountInteger -= (hundreds * 100);
-                    }
-                    */
                 }
                 else
                 {
