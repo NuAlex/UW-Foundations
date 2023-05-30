@@ -1,33 +1,157 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
+using System.CodeDom.Compiler;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Data.SqlTypes;
 
-// Poor implementation, does not expand the hundreds of tousands.
 
 namespace Challenge01_4_PronounceMoney
 {
     internal class Program
     {
+        static void PrintUnits(OrderedDictionary dic)
+        {
+            foreach (DictionaryEntry pair in dic) 
+            {
+                Console.WriteLine("{0} | {1}", pair.Key.ToString(), pair.Value);
+            }
+        }
+
+        static decimal GetWholeValue(decimal value)
+        {
+            return Math.Truncate(value);
+        }
+
+
+        static decimal GetFractionalValue(decimal value)
+        {
+            // get the whole part
+            decimal whole = Math.Truncate(value);
+            // get the fractional part
+            decimal fractional = value - whole;
+            return fractional;
+        }
+        // Precision: 0 for automatic precision, 100 for #.##, 1000 for #.###... etc
+        static decimal GetFractionalValueAsWholeNumber(decimal value, int precision)
+        {
+            decimal fractional = GetFractionalValue(value);
+            decimal power;
+            if (precision == 0)
+            {
+                // calcule precision
+                // count the number of fractional digits  
+                double countFractionalDigits = CountFractionalDigits(fractional);
+                // get necessary power to convert fraction to whole number
+                power = (decimal)Math.Pow(10, countFractionalDigits);
+            }
+            else
+            {
+                power = precision;
+            }
+
+            // return the fractional part as a whole number
+            decimal fractionalPowered = fractional * power;
+            return Math.Truncate(fractionalPowered);
+        }
+
+        static decimal CountWholeDigits(decimal value)
+        {
+            int count = 0;
+            while (value > 0)
+            {
+                value/=10;
+                count++;
+            }
+            return count;
+        }
+
+        static double CountFractionalDigits(decimal value)
+        {
+            int count = 0;
+            while ((decimal)Math.Truncate(value) * 10 != (decimal)value * 10)
+            {
+                value *= 10;
+                count++;
+            }
+            return count;
+        }
+
         static void Main()
         {
+            OrderedDictionary units = new OrderedDictionary();
+
+            units.Add((string) "Bazillion", (decimal) 1000000000000000);
+            units.Add((string) "Trillion",  (decimal) 1000000000000);
+            units.Add((string) "Billion",   (decimal) 1000000000);
+            units.Add((string) "Million",   (decimal) 1000000);
+            units.Add((string) "Thousand",  (decimal) 1000);
+            //units.Add((string) "Hundred",   (decimal) 100);
+            PrintUnits(units);
+
+            bool validInput;
 
             decimal amount;
             decimal amountInteger;
-            bool validInput;
-            int millions;
-            int thousands;
-            int hundreds;
-            int cents;
+            decimal truncate;
+            decimal remaining;
+            
+            decimal millions;
+            decimal thousands;
+            decimal hundreds;
+            decimal cents;
 
             while (true)
             {
                 Console.Write("Please introduce the amount to money ($):");
                 validInput = decimal.TryParse(Console.ReadLine(), out amount);
 
-                if (validInput )
+                if (validInput)
                 {
-                    amountInteger = (int) Math.Truncate(amount);
-                    cents = (int) ((amount - amountInteger) * 100);
+                    // Handle Cents
+                    //amountInteger = (int) Math.Truncate(amount);
+                    //cents = (int) ((amount - amountInteger) * 100);
+                    amountInteger = GetWholeValue(amount);
+                    cents = GetFractionalValueAsWholeNumber(amount, 100);
+                    //Console.WriteLine("{0} and {1} cents", amountInteger, cents);
 
+                    remaining = amountInteger;
+                    // Handle Bazillions to Thousands
+                    foreach (DictionaryEntry unit in units)
+                    {
+                        truncate = GetWholeValue(remaining / (decimal)unit.Value);
+                        if (truncate > 0)
+                        {
+                            // move floating point to next unit
+                            remaining = remaining - (truncate * (decimal)unit.Value);
+
+                            // Handle Unit
+                            //Console.WriteLine("++ {0}", truncate);
+
+                            // Handle hundreds
+                            hundreds = truncate / 100;
+                            if (hundreds > 1)
+                            {
+                                Console.Write(" {0} hundred and", GetWholeValue(hundreds));
+                            }
+                            Console.Write(" {0}", GetFractionalValueAsWholeNumber(hundreds, 0));
+
+                            Console.Write(" {0}", unit.Key.ToString());
+                        }
+                        
+                    }
+
+                    if (cents > 0)
+                    {
+                        Console.Write("{0} Dollars and {0} cents.", amountInteger);
+                    }
+                    else
+                    {
+                        Console.Write("and {0} Dollars.", amountInteger);
+                    }
+
+                    /*
                     millions = (int) Math.Truncate(amountInteger / 1000000);
                     if ( millions > 0 )
                     {
@@ -48,15 +172,7 @@ namespace Challenge01_4_PronounceMoney
                         Console.Write("{0} Hundred, ", hundreds);
                         amountInteger -= (hundreds * 100);
                     }
-
-                    if (cents > 0)
-                    {
-                        Console.Write("{0} Dollars and {0} cents.", amountInteger);
-                    }
-                    else
-                    {
-                        Console.Write("and {0} Dollars.", amountInteger);
-                    }                    
+                    */
                 }
                 else
                 {
