@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab24-Lists\Lab24-Lists\bin\Debug\Lab24-Lists.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab24-Lists\Lab24-Lists\bin\Debug\Lab24-Lists.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab24-Lists\Lab24-Lists\bin\Debug\Lab24-Lists.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab24-Lists\Lab24-Lists\obj\Debug\Lab24-Lists.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab24-Lists\Lab24-Lists\obj\Debug\Lab24-Lists.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab24-Lists\Lab24-Lists\obj\Debug\Lab24-Lists.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab24-Lists\Lab24-Lists\obj\Debug\Lab24-Lists.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab24-Lists\Lab24-Lists\obj\Debug\Lab24-Lists.pdb

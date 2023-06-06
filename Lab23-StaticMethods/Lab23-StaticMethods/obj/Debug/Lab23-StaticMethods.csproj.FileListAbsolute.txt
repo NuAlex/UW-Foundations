@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab23-StaticMethods\Lab23-StaticMethods\bin\Debug\Lab23-StaticMethods.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab23-StaticMethods\Lab23-StaticMethods\bin\Debug\Lab23-StaticMethods.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab23-StaticMethods\Lab23-StaticMethods\bin\Debug\Lab23-StaticMethods.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab23-StaticMethods\Lab23-StaticMethods\obj\Debug\Lab23-StaticMethods.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab23-StaticMethods\Lab23-StaticMethods\obj\Debug\Lab23-StaticMethods.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab23-StaticMethods\Lab23-StaticMethods\obj\Debug\Lab23-StaticMethods.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab23-StaticMethods\Lab23-StaticMethods\obj\Debug\Lab23-StaticMethods.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab23-StaticMethods\Lab23-StaticMethods\obj\Debug\Lab23-StaticMethods.pdb
