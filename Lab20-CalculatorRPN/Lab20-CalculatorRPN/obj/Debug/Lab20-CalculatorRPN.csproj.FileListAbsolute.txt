@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab20-CalculatorRPN\Lab20-CalculatorRPN\bin\Debug\Lab20-CalculatorRPN.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab20-CalculatorRPN\Lab20-CalculatorRPN\bin\Debug\Lab20-CalculatorRPN.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab20-CalculatorRPN\Lab20-CalculatorRPN\bin\Debug\Lab20-CalculatorRPN.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab20-CalculatorRPN\Lab20-CalculatorRPN\obj\Debug\Lab20-CalculatorRPN.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab20-CalculatorRPN\Lab20-CalculatorRPN\obj\Debug\Lab20-CalculatorRPN.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab20-CalculatorRPN\Lab20-CalculatorRPN\obj\Debug\Lab20-CalculatorRPN.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab20-CalculatorRPN\Lab20-CalculatorRPN\obj\Debug\Lab20-CalculatorRPN.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab20-CalculatorRPN\Lab20-CalculatorRPN\obj\Debug\Lab20-CalculatorRPN.pdb

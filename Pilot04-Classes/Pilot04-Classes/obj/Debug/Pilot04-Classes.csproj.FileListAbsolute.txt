@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot04-Classes\Pilot04-Classes\bin\Debug\Pilot04-Classes.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot04-Classes\Pilot04-Classes\bin\Debug\Pilot04-Classes.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot04-Classes\Pilot04-Classes\bin\Debug\Pilot04-Classes.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot04-Classes\Pilot04-Classes\obj\Debug\Pilot04-Classes.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot04-Classes\Pilot04-Classes\obj\Debug\Pilot04-Classes.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot04-Classes\Pilot04-Classes\obj\Debug\Pilot04-Classes.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot04-Classes\Pilot04-Classes\obj\Debug\Pilot04-Classes.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot04-Classes\Pilot04-Classes\obj\Debug\Pilot04-Classes.pdb
