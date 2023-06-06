@@ -1,25 +1,95 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Pilot03_ProjectDictionary1.Inventory;
 
 namespace Pilot03_ProjectDictionary1
 {
 
-    public AddNewItem()
-    {
-
-
-    }
 
     internal class Program
     {
+        public void AddNewItem()
+        {
+
+
+        }
 
 
         static void Main(string[] args)
         {
 
+            // Create Example object instance.
+            var PetShop = new Inventory();
+            // Look up a value from the Dictionary field.
+            // Console.WriteLine("RESULT: " + PetShop.GetValue("ABC123"));
+            PetShop.Print(PetShop.GetValue("ABC123"));
+
+            Console.WriteLine("Found Key \"ABC123\": {0}" , PetShop.ContainsKey("ABC123"));
+            Console.WriteLine("Found Key \"ABC123\": {0}", PetShop.ContainsKey("BC123"));
+
+
+            Console.Title = " PET SHOP APPLICATION ";
+            Console.WriteLine("Window size = {0} x {1}", Console.WindowWidth, Console.WindowHeight);
+            Console.WriteLine("Encoding CodePage {0} / {1}", Console.OutputEncoding.CodePage, Console.OutputEncoding.WindowsCodePage);
+
+            
+            // https://learn.microsoft.com/en-us/dotnet/api/system.console?view=net-7.0
+            uint rangeStart = 0;
+            uint rangeEnd = 0;
+            bool setOutputEncodingToUnicode = true;
+
+            // Get the current encoding so we can restore it.
+            Encoding originalOutputEncoding = Console.OutputEncoding;
+            try
+            {
+                rangeStart = uint.Parse("2500", NumberStyles.HexNumber);
+                rangeEnd = uint.Parse("2600", NumberStyles.HexNumber);
+
+                if (setOutputEncodingToUnicode)
+                {
+                    // This won't work before .NET Framework 4.5.
+                    try
+                    {
+                        // Set encoding using endianness of this system.
+                        // We're interested in displaying individual Char objects, so
+                        // we don't want a Unicode BOM or exceptions to be thrown on
+                        // invalid Char values.
+                        Console.OutputEncoding = new UnicodeEncoding(!BitConverter.IsLittleEndian, false);
+                        Console.WriteLine("\nOutput encoding set to UTF-16");
+                    }
+                    catch (IOException)
+                    {
+                        Console.OutputEncoding = new UTF8Encoding();
+                        Console.WriteLine("Output encoding set to UTF-8");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("The console encoding is {0} (code page {1})",
+                                      Console.OutputEncoding.EncodingName,
+                                      Console.OutputEncoding.CodePage);
+                }
+                TextUI.DisplayRange(rangeStart, rangeEnd);
+            }
+            catch (ArgumentException ex) 
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally 
+            {
+                // Restore console environment.
+                Console.OutputEncoding = originalOutputEncoding;
+            }
+            Console.ReadLine();
+
+            TextUI.PrintTitle("PET SHOP - LOVELY PUPPIES");
+
+            /*
             Dictionary<string, ShopItem> shopItems = new Dictionary<string, ShopItem>();
             //shopItems = shopItems.ShopInventorySamples();
 
@@ -33,13 +103,18 @@ namespace Pilot03_ProjectDictionary1
 
 
             ShopItem s;
+            // Tries to get the Value for the provided Key
             if (shopItems.TryGetValue("ABC123", out  s))
             {
-                Console.WriteLine(s.id + ": " + s.description + " | " + shopItems.Count);
+                Console.WriteLine("Found: " + s.id + ": " + s.description + " | " + shopItems.Count);
             }
             Console.WriteLine("Contains s? " + shopItems.ContainsValue(s).ToString());
 
+            Console.WriteLine("Contains key 'ABC123'? " + shopItems.ContainsKey("ABC123"));
+            */
+
             Console.ReadLine();
+            Console.Clear();
         }
     }
 }
