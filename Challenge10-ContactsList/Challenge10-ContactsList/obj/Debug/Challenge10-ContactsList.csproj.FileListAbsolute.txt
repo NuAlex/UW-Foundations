@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge10-ContactsList\Challenge10-ContactsList\bin\Debug\Challenge10-ContactsList.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge10-ContactsList\Challenge10-ContactsList\bin\Debug\Challenge10-ContactsList.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge10-ContactsList\Challenge10-ContactsList\bin\Debug\Challenge10-ContactsList.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge10-ContactsList\Challenge10-ContactsList\obj\Debug\Challenge10-ContactsList.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge10-ContactsList\Challenge10-ContactsList\obj\Debug\Challenge10-ContactsList.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge10-ContactsList\Challenge10-ContactsList\obj\Debug\Challenge10-ContactsList.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge10-ContactsList\Challenge10-ContactsList\obj\Debug\Challenge10-ContactsList.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Challenge10-ContactsList\Challenge10-ContactsList\obj\Debug\Challenge10-ContactsList.pdb

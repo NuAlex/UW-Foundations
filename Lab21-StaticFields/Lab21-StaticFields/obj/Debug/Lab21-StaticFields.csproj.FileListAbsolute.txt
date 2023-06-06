@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab21-StaticFields\Lab21-StaticFields\bin\Debug\Lab21-StaticFields.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab21-StaticFields\Lab21-StaticFields\bin\Debug\Lab21-StaticFields.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab21-StaticFields\Lab21-StaticFields\bin\Debug\Lab21-StaticFields.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab21-StaticFields\Lab21-StaticFields\obj\Debug\Lab21-StaticFields.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab21-StaticFields\Lab21-StaticFields\obj\Debug\Lab21-StaticFields.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab21-StaticFields\Lab21-StaticFields\obj\Debug\Lab21-StaticFields.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab21-StaticFields\Lab21-StaticFields\obj\Debug\Lab21-StaticFields.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab21-StaticFields\Lab21-StaticFields\obj\Debug\Lab21-StaticFields.pdb

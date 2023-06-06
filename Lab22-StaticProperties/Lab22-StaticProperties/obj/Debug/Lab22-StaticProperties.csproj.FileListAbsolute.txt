@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab22-StaticProperties\Lab22-StaticProperties\bin\Debug\Lab22-StaticProperties.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab22-StaticProperties\Lab22-StaticProperties\bin\Debug\Lab22-StaticProperties.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab22-StaticProperties\Lab22-StaticProperties\bin\Debug\Lab22-StaticProperties.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab22-StaticProperties\Lab22-StaticProperties\obj\Debug\Lab22-StaticProperties.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab22-StaticProperties\Lab22-StaticProperties\obj\Debug\Lab22-StaticProperties.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab22-StaticProperties\Lab22-StaticProperties\obj\Debug\Lab22-StaticProperties.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab22-StaticProperties\Lab22-StaticProperties\obj\Debug\Lab22-StaticProperties.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Lab22-StaticProperties\Lab22-StaticProperties\obj\Debug\Lab22-StaticProperties.pdb
