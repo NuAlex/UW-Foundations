@@ -38,6 +38,47 @@ class RPN // design RPN
 {
     private Stack stack = new Stack(); // create an object of class Stack
 
+    // CORRECTION
+    //public void Process(string str)
+    //{
+    //    switch (str)
+    //    {
+    //        case "+": // when user wants to add the last two numbers
+    //            {
+    //                // TODO: Pop 2 values off the stack     
+    //                int v2 = stack.Pop();
+    //                int v1 = stack.Pop();
+
+    //                // Add them together
+    //                // Push the result back onto the stack
+    //                stack.Push(v1 + v2);
+    //                break;
+    //            }
+    //        case "-": // when user wants to subtract the last two numbers
+    //            {
+    //                // TODO: Pop 2 values off the stack
+    //                int v2 = stack.Pop();
+    //                int v1 = stack.Pop();
+
+    //                // Subtract them together
+    //                // Push the result back onto the stack
+    //                stack.Push(v1 - v2);
+    //                break;
+    //            }
+    //        default: // when user enters a number
+    //            {
+    //                // TODO: place the number into the stack
+    //                // step 1: convert str into an integer
+    //                int v1 = int.Parse(str);
+
+    //                // step 2: push the integer into the stack
+    //                stack.Push(v1);
+    //                break;
+    //            }
+    //    }
+    //}
+
+
     public void Process(string str)
     {
         switch (str)
@@ -47,17 +88,17 @@ class RPN // design RPN
                     // TODO:
                     if (stack.IsEmpty)
                     {
+                        Console.WriteLine("ERROR: Add more parcels and try again");
                         return;
                     }
                     // Pop 2 values off the stack
                     int parcel1 = stack.Pop();
-                    /*
                     if (stack.IsEmpty)
                     {
                         stack.Push(parcel1);
+                        Console.WriteLine("ERROR: Add more parcels and try again");
                         return;
                     }
-                    */
                     int parcel2 = stack.Pop();
                     // Add them together
                     // Push the result back onto the stack
@@ -69,24 +110,29 @@ class RPN // design RPN
                     // TODO:
                     if (stack.IsEmpty)
                     {
+                        Console.WriteLine("ERROR: Add more parcels and try again.");
                         return;
                     }
                     // Pop 2 values off the stack
                     int parcel1 = stack.Pop();
-                    /*
                     if (stack.IsEmpty)
                     {
                         stack.Push(parcel1);
+                        Console.WriteLine("ERROR: Add more parcels and try again.");
                         return;
                     }
-                    */
                     int parcel2 = stack.Pop();
                     // Subtract them together
                     // Push the result back onto the stack
-                    stack.Push(parcel1 - parcel2);
+                    stack.Push(parcel2 - parcel1);
                     break;
                 }
-            default: // when user enters a number
+            //case "": // when user wants to subtract the last two numbers
+            //    {
+            //        Console.WriteLine("ERROR: Type a number or +/- operator.");
+            //        break;
+            //    }
+                    default: // when user enters a number
                 {
                     // TODO:
                     // places the number into the stack
@@ -96,10 +142,17 @@ class RPN // design RPN
                     // so....
 
                     // step 1: convert str into an integer
-                    int newValue = int.Parse(str);
+                    int newValue;
+                    if (int.TryParse(str, out newValue))
+                    {
+                        // step 2: push the integer into the stack
+                        stack.Push(newValue);
+                    }
+                    else
+                    {
+                        Console.WriteLine("ERROR: Type a number or +/- operator.");
+                    }
 
-                    // step 2: push the integer into the stack
-                    stack.Push(newValue);
                     break;
                 }
         }
