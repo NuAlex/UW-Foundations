@@ -25,15 +25,51 @@ namespace Pilot03_ProjectDictionary1
 
             // Create Example object instance.
             var PetShop = new Inventory();
+
+            /* TEST
             // Look up a value from the Dictionary field.
             // Console.WriteLine("RESULT: " + PetShop.GetValue("ABC123"));
             PetShop.Print(PetShop.GetValue("ABC123"));
 
             Console.WriteLine("Found Key \"ABC123\": {0}" , PetShop.ContainsKey("ABC123"));
             Console.WriteLine("Found Key \"ABC123\": {0}", PetShop.ContainsKey("BC123"));
+     
+
+            PetShop.ContainsKey("QWE");
+            Console.ReadLine();
+            */
 
 
-            Console.Title = " PET SHOP APPLICATION ";
+            // BEGIN
+            do
+            {
+                switch (TextUI.DisplayMainMenu())
+                {
+                    case 0:
+                        Console.WriteLine("Exit!");
+                        return;
+                    case 1:
+                        TextUI.PrintTitle("PET SHOP - LOVELY PUPPIES");
+                        PetShop.AddShopItem();
+                        break;
+                    case 2:
+                        Console.WriteLine("case2");
+                        break;
+                    case 3:
+                        Console.WriteLine("case3");
+                        break;
+                    case 4:
+                        TextUI.PrintTitle("PET SHOP - LOVELY PUPPIES");
+                        PetShop.PrintAllItems();
+                        break;
+                    default:
+                        Console.WriteLine("Invalid option!");
+                        break;
+                }
+            }
+            while (true);
+
+            /*
             Console.WriteLine("Window size = {0} x {1}", Console.WindowWidth, Console.WindowHeight);
             Console.WriteLine("Encoding CodePage {0} / {1}", Console.OutputEncoding.CodePage, Console.OutputEncoding.WindowsCodePage);
 
@@ -87,7 +123,7 @@ namespace Pilot03_ProjectDictionary1
             }
             Console.ReadLine();
 
-            TextUI.PrintTitle("PET SHOP - LOVELY PUPPIES");
+            
 
             /*
             Dictionary<string, ShopItem> shopItems = new Dictionary<string, ShopItem>();

@@ -4,33 +4,87 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Pilot03_ProjectDictionary1
 {
     internal class TextUI
     {
 
-
-        public static void PrintTitle(string title)
+        public static string PadCenter(string s, int width, char c)
         {
-            Console.Clear();
-            for (int i = 0; i < Console.WindowWidth; i++) 
-            {
-                Console.Write((char)(0x2500));
-            }
-            Console.WriteLine("\n");
+            if (s == null || width <= s.Length) return s;
 
-            double middle = (Console.WindowWidth - title.Length) / 2;
-            int startTitle = (int) Math.Round(middle);
+            int padding = width - s.Length;
+            return s.PadLeft(s.Length + padding / 2, c).PadRight(width, c);
+        }
 
-            Console.WriteLine("{0} {1} \n", startTitle, title);
 
+        public static void PrintLine()
+        {
             for (int i = 0; i < Console.WindowWidth; i++)
             {
                 Console.Write((char)(0x2500));
             }
+            Console.WriteLine("\n");
+        }
+
+
+            public static void PrintTitle(string title)
+        {
+            // Print 1st line
+            Console.Clear();
+            PrintLine();
+
+            // Print Title
+            double middle = (Console.WindowWidth - title.Length) / 2;
+            int startTitle = (int) Math.Round(middle);
+            
+            Console.WriteLine(PadCenter(title, Console.WindowWidth, ' '));
+            Console.WriteLine();
+
+            // Print 2nd line
+            PrintLine();
+            Console.WriteLine("\n\n");
 
         }
+
+        public static void PrintMenu(List<string> Menu)
+
+        {
+            foreach (string option in Menu)
+            {
+                Console.WriteLine(option);
+            }
+            Console.Write("\n >> ");
+        }
+
+        public static int DisplayMainMenu()
+        {
+            List<string> MenuList = new List<string>
+            { 
+                "    1 - Add a shop item",
+                "    2 - Change shop item",
+                "    3 - Remove shop item",
+                "    4 - List shop items",
+                "    0 - Exit"
+            };
+            
+            PrintTitle("PET SHOP - LOVELY PUPPIES");
+            PrintMenu(MenuList);
+
+            string menuChoice;
+            int selectedOption;
+            do
+            {
+                menuChoice = Console.ReadLine();
+                int.TryParse(menuChoice, out selectedOption);
+            } 
+            while (selectedOption < 0 || selectedOption > MenuList.Count);
+
+            return selectedOption;
+        }
+
 
         public static void DisplayRange(uint start, uint end)
         {
