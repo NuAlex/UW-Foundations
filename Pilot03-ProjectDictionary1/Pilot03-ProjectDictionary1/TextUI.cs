@@ -60,27 +60,27 @@ namespace Pilot03_ProjectDictionary1
         }
 
         public static int DisplayMainMenu()
-        {
+        {       
+            string menuChoice;
+            int selectedOption;
+            bool intParsed;
             List<string> MenuList = new List<string>
-            { 
+            {
                 "    1 - Add a shop item",
                 "    2 - Change shop item",
                 "    3 - Remove shop item",
                 "    4 - List shop items",
                 "    0 - Exit"
             };
-            
-            PrintTitle("PET SHOP - LOVELY PUPPIES");
-            PrintMenu(MenuList);
 
-            string menuChoice;
-            int selectedOption;
             do
             {
+                PrintTitle("PET SHOP - LOVELY PUPPIES");
+                PrintMenu(MenuList);
                 menuChoice = Console.ReadLine();
-                int.TryParse(menuChoice, out selectedOption);
+                intParsed = int.TryParse(menuChoice, out selectedOption);
             } 
-            while (selectedOption < 0 || selectedOption > MenuList.Count);
+            while (selectedOption < 0 || selectedOption > MenuList.Count - 1 || !intParsed);
 
             return selectedOption;
         }
