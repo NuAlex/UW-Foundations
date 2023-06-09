@@ -25,6 +25,7 @@ namespace Pilot03_ProjectDictionary1
 
             // Create Example object instance.
             var PetShop = new Inventory();
+            string ShopName = "PET SHOP - LOVELY PUPPIES";
 
             /* TEST
             // Look up a value from the Dictionary field.
@@ -49,17 +50,18 @@ namespace Pilot03_ProjectDictionary1
                         Console.WriteLine("Exit!");
                         return;
                     case 1:
-                        TextUI.PrintTitle("PET SHOP - LOVELY PUPPIES");
+                        TextUI.PrintTitle(ShopName);
                         PetShop.AddShopItem();
                         break;
                     case 2:
                         Console.WriteLine("case2");
                         break;
                     case 3:
-                        Console.WriteLine("case3");
+                        TextUI.PrintTitle(ShopName);
+                        PetShop.RemoveItem();
                         break;
                     case 4:
-                        TextUI.PrintTitle("PET SHOP - LOVELY PUPPIES");
+                        TextUI.PrintTitle(ShopName);
                         PetShop.PrintAllItems();
                         break;
                     default:
@@ -147,10 +149,11 @@ namespace Pilot03_ProjectDictionary1
             Console.WriteLine("Contains s? " + shopItems.ContainsValue(s).ToString());
 
             Console.WriteLine("Contains key 'ABC123'? " + shopItems.ContainsKey("ABC123"));
-            */
+            
 
             Console.ReadLine();
             Console.Clear();
+            */
         }
     }
 }
