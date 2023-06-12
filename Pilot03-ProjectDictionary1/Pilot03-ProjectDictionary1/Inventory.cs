@@ -44,14 +44,14 @@ namespace Pilot03_ProjectDictionary1
         }
 
         // Check if ShopItem key exists
-        public bool ContainsKey(string key)
+        private bool ContainsKey(string key)
         {
             return items.ContainsKey(key);
         }
 
 
         // Print a Shop Item
-        public void PrintItemAsList(ShopItem item)
+        private void PrintItemAsList(ShopItem item)
         {
             Console.WriteLine("\n" +
                               "    Id:          {0}\n" +
@@ -73,7 +73,7 @@ namespace Pilot03_ProjectDictionary1
          * Validates is user typed 'c' or 'C' to cancel operation
          * Outputs the user input to out variable
          */
-        public bool ReadUserInput(string prompt, bool allowEmptyOut, out string input) 
+        private bool ReadUserInput(string prompt, bool allowEmptyOut, out string input) 
         {
             // Keep asking for valid input if allowEmptyOut == False
             do
@@ -99,7 +99,7 @@ namespace Pilot03_ProjectDictionary1
          * Validates is user typed 'c' or 'C' to cancel operation
          * Parses and outputs the user input to out decimal variable
          */
-        public bool ReadUserInput(string prompt, out decimal inputDecimal)
+        private bool ReadUserInput(string prompt, out decimal inputDecimal)
         {
             Console.Write(prompt);
             string input = Console.ReadLine();
@@ -119,7 +119,7 @@ namespace Pilot03_ProjectDictionary1
          * Validates is user typed 'c' or 'C' to cancel operation
          * Parses and outputs the user input to out integer variable
          */
-        public bool ReadUserInput(string prompt, out int inputInt)
+        private bool ReadUserInput(string prompt, out int inputInt)
         {
             Console.Write(prompt);
             string input = Console.ReadLine();
@@ -135,7 +135,7 @@ namespace Pilot03_ProjectDictionary1
         }
 
         // Add new item to Shop list
-        public void AddShopItem()
+        internal void AddShopItem()
         {
             bool itemKeyExists;
             ShopItem newItem = new ShopItem();
@@ -154,20 +154,163 @@ namespace Pilot03_ProjectDictionary1
             while (!string.IsNullOrEmpty(newItem.id) && itemKeyExists);
 
             if (!ReadUserInput("    Description? ", AllowNullOrEmpty, out newItem.description))   { return; }
-            if (!ReadUserInput("    Price? ", out newItem.price))               { return; }
-            if (!ReadUserInput("    Cost? ", out newItem.cost))                 { return; }
-            if (!ReadUserInput("    Quantity? ", out newItem.quantity))         { return; }
+            if (!ReadUserInput("    Price? ", out newItem.price))                                 { return; }
+            if (!ReadUserInput("    Cost? ", out newItem.cost))                                   { return; }
+            if (!ReadUserInput("    Quantity? ", out newItem.quantity))                           { return; }
 
             items.Add(newItem.id.ToLower().Trim(), newItem);
         }
 
+
+        // Read the input from the user
+        // Returns false is user typed 'C' to cancel
+        // Returns true if/when itemIf is found
+        private bool FindItemByKey(out string itemId)
+        {
+            // Input item ID - Validate if not null and is exists
+            bool itemKeyExists;
+            do
+            {
+                if (!ReadUserInput("    Product ID? ", DenyNullOrEmpty, out itemId)) 
+                {
+                    return false; 
+                }
+                itemId = itemId.ToLower().Trim();
+                itemKeyExists = ContainsKey(itemId);
+                if (!itemKeyExists)
+                {
+                    Console.WriteLine("    ERROR: Item not found. Please try again.");
+                }
+            }
+            while (!string.IsNullOrEmpty(itemId) && !itemKeyExists);
+
+            return true;
+        }
+
+        // Alows user to edit a given string
+        // Used to change the current value of a field
+        private static string EditReadLine(string input)
+        {
+            int pos = Console.CursorLeft;
+            Console.Write(input);
+            ConsoleKeyInfo info;
+            List<char> chars = new List<char>();
+            if (string.IsNullOrEmpty(input) == false)
+            {
+                chars.AddRange(input.ToCharArray());
+            }
+
+            while (true)
+            {
+                info = Console.ReadKey(true);
+                if (info.Key == ConsoleKey.Backspace && Console.CursorLeft > pos)
+                {
+                    chars.RemoveAt(chars.Count - 1);
+                    Console.CursorLeft -= 1;
+                    Console.Write(' ');
+                    Console.CursorLeft -= 1;
+
+                }
+                else if (info.Key == ConsoleKey.Enter) 
+                { 
+                    Console.Write(Environment.NewLine); 
+                    break; 
+                }
+                //Here you need create own checking of symbols
+                else if (char.IsLetterOrDigit(info.KeyChar) || char.IsPunctuation(info.KeyChar))
+                {
+                    Console.Write(info.KeyChar);
+                    chars.Add(info.KeyChar);
+                }
+            }
+            return new string(chars.ToArray());
+        }
+
+        // Alows user to edit a given decimal value
+        private static decimal EditReadLine(decimal input)
+        {
+            string inputStr = input.ToString();
+            inputStr = EditReadLine(inputStr);
+            decimal.TryParse(inputStr, out decimal result);
+            return result;
+        }
+
+        // Alows user to edit a given int value
+        private static int EditReadLine(int input)
+        {
+            string inputStr = input.ToString();
+            inputStr = EditReadLine(inputStr);
+            int.TryParse(inputStr, out int result);
+            return result;
+        }
+
+        // Confirms user operation [y/n]
+        private static ConsoleKey ConfirmOperation(string operation)
+        {
+            ConsoleKey response;
+            Console.Write(operation);
+            do
+            {
+                response = Console.ReadKey(true).Key;   // true is intercept key but dont show it, false shows the key
+            }
+            while (response != ConsoleKey.Y && response != ConsoleKey.N);
+            return response;
+        }
+
+        // Change a Shop item from the current list
+        internal void ChangeItem()
+        {
+            string changeItemId;
+            if (!FindItemByKey(out changeItemId))
+            {
+                return;
+            }
+
+            ShopItem changeItem = items[changeItemId];
+            Console.WriteLine("");
+            PrintItemAsList(changeItem);
+
+            Console.WriteLine();
+            Console.Write("    Description: ");
+            changeItem.description = EditReadLine(changeItem.description);
+            Console.Write("    Price: ");
+            changeItem.price = EditReadLine(changeItem.price);
+            Console.Write("    Cost: ");
+            changeItem.cost = EditReadLine(changeItem.cost);
+            Console.Write("    Quantity: ");
+            changeItem.quantity = EditReadLine(changeItem.quantity);
+
+            Console.WriteLine("\n    Update item:");
+            PrintItemAsList(changeItem);
+            ConsoleKey response = ConfirmOperation("\n    Are you sure you want to update this item? [y/n] ");
+            /*
+            Console.WriteLine("\n    Update item:");
+            PrintItemAsList(changeItem);
+            Console.Write("\n    Are you sure you want to update this item? [y/n] ");
+            do
+            {
+                response = Console.ReadKey(true).Key;   // true is intercept key but dont show it, false shows the key
+            }
+            while (response != ConsoleKey.Y && response != ConsoleKey.N);
+            */
+            if (response == ConsoleKey.Y)
+            {
+                items[changeItemId] = changeItem;
+                Console.WriteLine("\n\n    Item '{0}' removed. Press any key to continue.", changeItem.id);
+                Console.ReadLine();
+            }
+        }
+
+
         // Show all items on the screen
-        public void RemoveItem()
+        internal void RemoveItem()
         {
             string removeItemId;
-            bool itemKeyExists;
+//            bool itemKeyExists;
 
             Console.WriteLine("    Remove Shop Item - Type \"c\" to cancel.\n");
+
+            /*
             // Input item ID - Validate if not null and is exists
             do
             {
@@ -181,18 +324,27 @@ namespace Pilot03_ProjectDictionary1
             }
             while (!string.IsNullOrEmpty(removeItemId) && !itemKeyExists);
 
+            */
+            if (!FindItemByKey(out removeItemId))
+            {
+                return;
+            }
+            
             ShopItem removeItem = items[removeItemId];
-            ConsoleKey response;
-
-            Console.WriteLine("");
+            //ConsoleKey response;
+            Console.WriteLine("\n    Remove item:");
             PrintItemAsList(removeItem);
+            ConsoleKey response = ConfirmOperation("\n    Are you sure you want to PERMANENTLY DELETE this item? [y/n] ");
+
+
+            /*
             Console.Write("\n    Are you sure you want to PERMANENTLY DELETE this item? [y/n] ");
             do
             {
                 response = Console.ReadKey(true).Key;   // true is intercept key but dont show it, false shows the key
             } 
             while (response != ConsoleKey.Y && response != ConsoleKey.N);
-
+            */
             if (response == ConsoleKey.Y)
             {
                 items.Remove(removeItemId);
@@ -204,12 +356,12 @@ namespace Pilot03_ProjectDictionary1
 
 
         // Show all items on the screen
-        public void PrintAllItems()
+        internal void PrintAllItems()
         {
             //Console.WriteLine("{0,10} | {1,20} | {2,10} | {3,10} | {4,10}",
             Console.WriteLine("{0,3} | {1,10} | {2,-40} | {3,20:C} | {4,20:C} | {5,20} | ",
                 " ",
-                "Id",
+                "ID",
                 "Description",
                 "Price",
                 "Cost",
@@ -223,9 +375,9 @@ namespace Pilot03_ProjectDictionary1
                     " ",
                     item.Value.id, 
                     item.Value.description, 
-                    item.Value.price.ToString(), 
-                    item.Value.cost.ToString(), 
-                    item.Value.quantity.ToString());
+                    item.Value.price, 
+                    item.Value.cost, 
+                    item.Value.quantity);
                 /*
                 Console.WriteLine("{0,-5} | {1,-20} | {2,10:C}",
                     item.Value.id,
@@ -239,31 +391,31 @@ namespace Pilot03_ProjectDictionary1
 
 
 
-            /*
-            public Inventory(string id, string description, decimal price, decimal cost, decimal value, int quantity)
-            {
-                this.id = id;
-                this.description = description;
+        /*
+        public Inventory(string id, string description, decimal price, decimal cost, decimal value, int quantity)
+        {
+            this.id = id;
+            this.description = description;
 
-
-            }
-
-
-            public static Dictionary<string, ShopItem> ShopInventorySamples()
-            {
-                ShopItem shopItem1 = new ShopItem("ABC121", "Dog1", (decimal)123.99, (decimal)90.10, 1, 2);
-                ShopItem shopItem2 = new ShopItem("ABC122", "Dog2", (decimal)123.99, (decimal)90.10, 1, 2);
-                ShopItem shopItem3 = new ShopItem("ABC123", "Dog3", (decimal)123.99, (decimal)90.10, 1, 2);
-
-                Dictionary<string, ShopItem> shopItemsSample = new Dictionary<string, ShopItem>();
-
-                shopItemsSample.Add(shopItem1.id, shopItem1);
-                shopItemsSample.Add(shopItem2.id, shopItem2);
-                shopItemsSample.Add(shopItem3.id, shopItem3);
-
-                return shopItemsSample;
-            }
-            */
 
         }
+
+
+        public static Dictionary<string, ShopItem> ShopInventorySamples()
+        {
+            ShopItem shopItem1 = new ShopItem("ABC121", "Dog1", (decimal)123.99, (decimal)90.10, 1, 2);
+            ShopItem shopItem2 = new ShopItem("ABC122", "Dog2", (decimal)123.99, (decimal)90.10, 1, 2);
+            ShopItem shopItem3 = new ShopItem("ABC123", "Dog3", (decimal)123.99, (decimal)90.10, 1, 2);
+
+            Dictionary<string, ShopItem> shopItemsSample = new Dictionary<string, ShopItem>();
+
+            shopItemsSample.Add(shopItem1.id, shopItem1);
+            shopItemsSample.Add(shopItem2.id, shopItem2);
+            shopItemsSample.Add(shopItem3.id, shopItem3);
+
+            return shopItemsSample;
+        }
+        */
+
+    }
     }

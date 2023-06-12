@@ -54,7 +54,8 @@ namespace Pilot03_ProjectDictionary1
                         PetShop.AddShopItem();
                         break;
                     case 2:
-                        Console.WriteLine("case2");
+                        TextUI.PrintTitle(ShopName);
+                        PetShop.ChangeItem();
                         break;
                     case 3:
                         TextUI.PrintTitle(ShopName);
