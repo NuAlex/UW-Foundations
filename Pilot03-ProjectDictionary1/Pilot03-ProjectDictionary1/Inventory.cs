@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,16 +11,29 @@ namespace Pilot03_ProjectDictionary1
     public class Inventory
     {
 
+        public Inventory(string Name)
+        {
+            ShopName = Name;
+        }
+
+        // Data structure
         public struct ShopItem
         {
             public string id;
             public string description;
             public decimal price;
             public decimal cost;
-            public int quantity;
-            //decimal value;
+            public decimal quantity;
+            public decimal value { get => price * quantity; }
+            //{
+            //    get
+            //    {
+            //        return price * quantity;
+            //    }
+            //}
         }
 
+        // TODO - replace with better data and init from Main()
         Dictionary<string, ShopItem> items = new Dictionary<string, ShopItem>()
         {
             {"abc121", new ShopItem {id = "ABC121", description = "Dog1", price = 123.99m, cost = 90.10m, quantity = 1} },
@@ -27,9 +41,13 @@ namespace Pilot03_ProjectDictionary1
             {"abc122", new ShopItem {id = "ABC122", description = "Dog2", price = 123.99m, cost = 90.10m, quantity = 2} }
         };
 
-        const bool AllowNullOrEmpty = true;
-        const bool DenyNullOrEmpty = false;
+        // Variables
+        public readonly string ShopName;
 
+        // Constants 
+        private const bool AllowNullOrEmpty = true; // Used in ReadUserInput(out string) to allow or prevent an empty user input
+
+        // Methods
         public ShopItem GetValue(string key)
         {
             if (items.TryGetValue(key, out ShopItem item))
@@ -53,19 +71,24 @@ namespace Pilot03_ProjectDictionary1
         // Print a Shop Item
         private void PrintItemAsList(ShopItem item)
         {
-            Console.WriteLine("\n" +
-                              "    Id:          {0}\n" +
-                              "    Description: {1}\n" +
-                              "    Price:       {2:C}\n" +
-                              "    Cost:        {3:C}\n" +
-                              "    Quantity:    {4}",
-                              item.id, 
-                              item.description, 
-                              item.price, 
-                              item.cost, 
-                              item.quantity
-                              // TODO ,item.value 
-                              );
+            Console.WriteLine();
+            Console.WriteLine($"    Id:          {item.id}\n" +
+                              $"    Description: {item.description}\n" +
+                              $"    Price:       {item.price:C}\n" +
+                              $"    Cost:        {item.cost:C}\n" +
+                              $"    Quantity:    {item.quantity}\n");
+        }
+
+        // Print a Shop Item including item's Value property
+        private void PrintItemAsListWithValue(ShopItem item)
+        {
+            Console.WriteLine();
+            Console.WriteLine($"    Id:          {item.id}\n" +
+                              $"    Description: {item.description}\n" +
+                              $"    Price:       {item.price:C}\n" +
+                              $"    Cost:        {item.cost:C}\n" +
+                              $"    Quantity:    {item.quantity}\n" +
+                              $"    Value:       {item.value}");
         }
 
         /* ReadUserInput - String overload
@@ -73,16 +96,16 @@ namespace Pilot03_ProjectDictionary1
          * Validates is user typed 'c' or 'C' to cancel operation
          * Outputs the user input to out variable
          */
-        private bool ReadUserInput(string prompt, bool allowEmptyOut, out string input) 
+        private bool ReadUserInput(string promptText, out string input, bool allowNullOrEmptyOutput) 
         {
-            // Keep asking for valid input if allowEmptyOut == False
+            // Keep asking for valid input if allowNullOrEmptyOutput == False
             do
             {
-                Console.Write(prompt);
+                Console.Write(promptText);
                 input = Console.ReadLine();
             }
-            while ((string.IsNullOrEmpty(input) && !allowEmptyOut) ||
-                    (!input.All(char.IsLetterOrDigit) && !allowEmptyOut));
+            while ((string.IsNullOrEmpty(input) && !allowNullOrEmptyOutput) ||
+                    (!input.All(char.IsLetterOrDigit) && !allowNullOrEmptyOutput));
 
 
             // checked if user want to cancel
@@ -99,9 +122,9 @@ namespace Pilot03_ProjectDictionary1
          * Validates is user typed 'c' or 'C' to cancel operation
          * Parses and outputs the user input to out decimal variable
          */
-        private bool ReadUserInput(string prompt, out decimal inputDecimal)
+        private bool ReadUserInput(string promptText, out decimal inputDecimal)
         {
-            Console.Write(prompt);
+            Console.Write(promptText);
             string input = Console.ReadLine();
             inputDecimal = 0;
 
@@ -119,9 +142,9 @@ namespace Pilot03_ProjectDictionary1
          * Validates is user typed 'c' or 'C' to cancel operation
          * Parses and outputs the user input to out integer variable
          */
-        private bool ReadUserInput(string prompt, out int inputInt)
+        private bool ReadUserInput(string promptText, out int inputInt)
         {
-            Console.Write(prompt);
+            Console.Write(promptText);
             string input = Console.ReadLine();
             inputInt = 0;
 
@@ -144,7 +167,7 @@ namespace Pilot03_ProjectDictionary1
             // Input item ID - Validate if not null and not duplicate
             do
             {
-                if (!ReadUserInput("    Product ID? ", DenyNullOrEmpty, out newItem.id)) { return; }
+                if (!ReadUserInput("    Product ID? ", out newItem.id, !AllowNullOrEmpty)) { return; }
                 itemKeyExists = ContainsKey(newItem.id.ToLower().Trim());
                 if (itemKeyExists)
                 {
@@ -153,7 +176,7 @@ namespace Pilot03_ProjectDictionary1
             }
             while (!string.IsNullOrEmpty(newItem.id) && itemKeyExists);
 
-            if (!ReadUserInput("    Description? ", AllowNullOrEmpty, out newItem.description))   { return; }
+            if (!ReadUserInput("    Description? ", out newItem.description, AllowNullOrEmpty))   { return; }
             if (!ReadUserInput("    Price? ", out newItem.price))                                 { return; }
             if (!ReadUserInput("    Cost? ", out newItem.cost))                                   { return; }
             if (!ReadUserInput("    Quantity? ", out newItem.quantity))                           { return; }
@@ -171,7 +194,7 @@ namespace Pilot03_ProjectDictionary1
             bool itemKeyExists;
             do
             {
-                if (!ReadUserInput("    Product ID? ", DenyNullOrEmpty, out itemId)) 
+                if (!ReadUserInput("    Product ID? ", out itemId, !AllowNullOrEmpty)) 
                 {
                     return false; 
                 }
@@ -260,28 +283,32 @@ namespace Pilot03_ProjectDictionary1
         // Change a Shop item from the current list
         internal void ChangeItem()
         {
+            TextUI.PrintTitle(ShopName);
+            Console.WriteLine("    |*|  CHANGE ITEM  |*|\n");
             string changeItemId;
             if (!FindItemByKey(out changeItemId))
             {
                 return;
             }
 
+            TextUI.PrintTitle(ShopName);
             ShopItem changeItem = items[changeItemId];
-            Console.WriteLine("");
+            //Console.WriteLine("\n    #>  CHANGE ITEM  <#");
+            Console.WriteLine("    |*|  CHANGE ITEM  |*|");
             PrintItemAsList(changeItem);
 
             Console.WriteLine();
-            Console.Write("    Description: ");
+            Console.Write("    New Description: ");
             changeItem.description = EditReadLine(changeItem.description);
-            Console.Write("    Price: ");
+            Console.Write("    New Price: ");
             changeItem.price = EditReadLine(changeItem.price);
-            Console.Write("    Cost: ");
+            Console.Write("    New Cost: ");
             changeItem.cost = EditReadLine(changeItem.cost);
-            Console.Write("    Quantity: ");
+            Console.Write("    New Quantity: ");
             changeItem.quantity = EditReadLine(changeItem.quantity);
 
-            Console.WriteLine("\n    Update item:");
-            PrintItemAsList(changeItem);
+            //Console.WriteLine("\n    Updated item:");
+            //PrintItemAsList(changeItem);
             ConsoleKey response = ConfirmOperation("\n    Are you sure you want to update this item? [y/n] ");
             /*
             Console.WriteLine("\n    Update item:");
@@ -296,8 +323,8 @@ namespace Pilot03_ProjectDictionary1
             if (response == ConsoleKey.Y)
             {
                 items[changeItemId] = changeItem;
-                Console.WriteLine("\n\n    Item '{0}' removed. Press any key to continue.", changeItem.id);
-                Console.ReadLine();
+                Console.WriteLine($"\n    Item '{changeItem.id}' updated successfully.");
+                TextUI.PrintPause();
             }
         }
 
@@ -348,36 +375,38 @@ namespace Pilot03_ProjectDictionary1
             if (response == ConsoleKey.Y)
             {
                 items.Remove(removeItemId);
-                Console.WriteLine("\n\n    Item '{0}' removed. Press any key to continue.", removeItem.id);
-                Console.ReadLine();
+                Console.WriteLine($"\n    Item '{removeItem.id}' removed successfully.");
+                TextUI.PrintPause();
             }
             
         }
 
 
-        // Show all items on the screen
-        internal void PrintAllItems()
+        // Show all items on the screen in a table format
+        internal void PrintItemsAsTable()
         {
-            //Console.WriteLine("{0,10} | {1,20} | {2,10} | {3,10} | {4,10}",
-            Console.WriteLine("{0,3} | {1,10} | {2,-40} | {3,20:C} | {4,20:C} | {5,20} | ",
-                " ",
+            //int width = -40;
+            Console.WriteLine("{0}| {1,12} | {2,-40} | {3,12:C} | {4,12:C} | {5,12} | {6,12} |",
+                "",
                 "ID",
                 "Description",
                 "Price",
                 "Cost",
-                "Quantity");
+                "Quantity",
+                "Value");
 
             TextUI.PrintLine();
 
             foreach (KeyValuePair<string, ShopItem> item in items)
             {
-                Console.WriteLine("{0,3} | {1,10} | {2,-40} | {3,20:C} | {4,20:C} | {5,20} | ", 
-                    " ",
+                Console.WriteLine("{0}| {1,12} | {2,-40} | {3,12:C} | {4,12:C} | {5,12} | {6,12:C} |", 
+                    "",
                     item.Value.id, 
                     item.Value.description, 
                     item.Value.price, 
                     item.Value.cost, 
-                    item.Value.quantity);
+                    item.Value.quantity,
+                    item.Value.value);
                 /*
                 Console.WriteLine("{0,-5} | {1,-20} | {2,10:C}",
                     item.Value.id,
@@ -385,8 +414,7 @@ namespace Pilot03_ProjectDictionary1
                     item.Value.price.ToString());
                 */
             }
-            Console.Write("\n\n    Press any key to continue.");
-            Console.Read();
+            TextUI.PrintPause();
         }
 
 

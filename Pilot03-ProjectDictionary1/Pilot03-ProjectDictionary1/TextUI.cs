@@ -19,6 +19,11 @@ namespace Pilot03_ProjectDictionary1
             return s.PadLeft(s.Length + padding / 2, c).PadRight(width, c);
         }
 
+        public static void PrintPause()
+        {
+            Console.Write("\n\n    // Press any key to continue // ");
+            Console.Read();
+        }
 
         public static void PrintLine()
         {
@@ -26,7 +31,7 @@ namespace Pilot03_ProjectDictionary1
             {
                 Console.Write((char)(0x2500));
             }
-            Console.WriteLine("\n");
+            Console.WriteLine();
         }
 
 
@@ -39,7 +44,8 @@ namespace Pilot03_ProjectDictionary1
             // Print Title
             double middle = (Console.WindowWidth - title.Length) / 2;
             int startTitle = (int) Math.Round(middle);
-            
+
+            Console.WriteLine();
             Console.WriteLine(PadCenter(title, Console.WindowWidth, ' '));
             Console.WriteLine();
 
