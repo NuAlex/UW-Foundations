@@ -24,8 +24,8 @@ namespace Pilot03_ProjectDictionary1
         {
 
             // Create Example object instance.
-            var PetShop = new Inventory();
-            string ShopName = "PET SHOP - LOVELY PUPPIES";
+            var PetShop = new Inventory("PET SHOP KIDS - LOVELY PUPPIES");
+            //string ShopName = "PET SHOP - LOVELY PUPPIES";
 
             /* TEST
             // Look up a value from the Dictionary field.
@@ -50,20 +50,20 @@ namespace Pilot03_ProjectDictionary1
                         Console.WriteLine("Exit!");
                         return;
                     case 1:
-                        TextUI.PrintTitle(ShopName);
+                        TextUI.PrintTitle(PetShop.ShopName);
                         PetShop.AddShopItem();
                         break;
                     case 2:
-                        TextUI.PrintTitle(ShopName);
+                        TextUI.PrintTitle(PetShop.ShopName);
                         PetShop.ChangeItem();
                         break;
                     case 3:
-                        TextUI.PrintTitle(ShopName);
+                        TextUI.PrintTitle(PetShop.ShopName);
                         PetShop.RemoveItem();
                         break;
                     case 4:
-                        TextUI.PrintTitle(ShopName);
-                        PetShop.PrintAllItems();
+                        TextUI.PrintTitle(PetShop.ShopName);
+                        PetShop.PrintItemsAsTable();
                         break;
                     default:
                         Console.WriteLine("Invalid option!");
