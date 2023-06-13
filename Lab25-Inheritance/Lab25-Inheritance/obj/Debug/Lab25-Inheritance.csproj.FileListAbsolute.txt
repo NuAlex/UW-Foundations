@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab25-Inheritance\Lab25-Inheritance\bin\Debug\Lab25-Inheritance.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab25-Inheritance\Lab25-Inheritance\bin\Debug\Lab25-Inheritance.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab25-Inheritance\Lab25-Inheritance\bin\Debug\Lab25-Inheritance.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab25-Inheritance\Lab25-Inheritance\obj\Debug\Lab25-Inheritance.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab25-Inheritance\Lab25-Inheritance\obj\Debug\Lab25-Inheritance.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab25-Inheritance\Lab25-Inheritance\obj\Debug\Lab25-Inheritance.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab25-Inheritance\Lab25-Inheritance\obj\Debug\Lab25-Inheritance.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab25-Inheritance\Lab25-Inheritance\obj\Debug\Lab25-Inheritance.pdb
