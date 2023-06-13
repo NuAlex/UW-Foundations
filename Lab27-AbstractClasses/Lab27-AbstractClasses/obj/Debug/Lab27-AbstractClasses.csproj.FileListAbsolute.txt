@@ -1,0 +1,8 @@
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab27-AbstractClasses\Lab27-AbstractClasses\bin\Debug\Lab27-AbstractClasses.exe.config
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab27-AbstractClasses\Lab27-AbstractClasses\bin\Debug\Lab27-AbstractClasses.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab27-AbstractClasses\Lab27-AbstractClasses\bin\Debug\Lab27-AbstractClasses.pdb
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab27-AbstractClasses\Lab27-AbstractClasses\obj\Debug\Lab27-AbstractClasses.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab27-AbstractClasses\Lab27-AbstractClasses\obj\Debug\Lab27-AbstractClasses.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab27-AbstractClasses\Lab27-AbstractClasses\obj\Debug\Lab27-AbstractClasses.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab27-AbstractClasses\Lab27-AbstractClasses\obj\Debug\Lab27-AbstractClasses.exe
+D:\Users\NunoA\Source\Repos-VM\UW-Foundations\Lab27-AbstractClasses\Lab27-AbstractClasses\obj\Debug\Lab27-AbstractClasses.pdb
