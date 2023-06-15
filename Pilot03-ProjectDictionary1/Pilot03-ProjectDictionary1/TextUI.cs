@@ -11,6 +11,10 @@ namespace Pilot03_ProjectDictionary1
     internal class TextUI
     {
 
+        const char HorizontalLine = (char)(0x2500);
+        // TODO shouln't be public
+        public const char VerticalLine = (char)(0x2502);
+
         public static string PadCenter(string s, int width, char c)
         {
             if (s == null || width <= s.Length) return s;
@@ -29,7 +33,7 @@ namespace Pilot03_ProjectDictionary1
         {
             for (int i = 0; i < Console.WindowWidth; i++)
             {
-                Console.Write((char)(0x2500));
+                Console.Write(HorizontalLine);
             }
             Console.WriteLine();
         }
