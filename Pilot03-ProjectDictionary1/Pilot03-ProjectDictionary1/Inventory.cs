@@ -67,6 +67,41 @@ namespace Pilot03_ProjectDictionary1
             return items.ContainsKey(key);
         }
 
+        // Show all items on the screen in a table format
+        internal void PrintItemsAsTable()
+        {
+            //int width = -40;
+            Console.WriteLine("{0}| {1,12} | {2,-40} | {3,12:C} | {4,12:C} | {5,12} | {6,12} |",
+                "",
+                "ID",
+                "Description",
+                "Price",
+                "Cost",
+                "Quantity",
+                "Value");
+
+            TextUI.PrintLine();
+
+            foreach (KeyValuePair<string, ShopItem> item in items)
+            {
+                Console.WriteLine("{0}| {1,12} | {2,-40} | {3,12:C} | {4,12:C} | {5,12} | {6,12:C} |",
+                    "",
+                    item.Value.id,
+                    item.Value.description,
+                    item.Value.price,
+                    item.Value.cost,
+                    item.Value.quantity,
+                    item.Value.value);
+                /*
+                Console.WriteLine("{0,-5} | {1,-20} | {2,10:C}",
+                    item.Value.id,
+                    item.Value.description,
+                    item.Value.price.ToString());
+                */
+            }
+            TextUI.PrintPause();
+        }
+
 
         // Print a Shop Item
         private void PrintItemAsList(ShopItem item)
@@ -184,6 +219,12 @@ namespace Pilot03_ProjectDictionary1
             items.Add(newItem.id.ToLower().Trim(), newItem);
         }
 
+
+        private bool FindItemByDescription(string description)
+        {
+            items.wh
+            return items.ContainsKey(key);
+        }
 
         // Read the input from the user
         // Returns false is user typed 'C' to cancel
@@ -382,40 +423,8 @@ namespace Pilot03_ProjectDictionary1
         }
 
 
-        // Show all items on the screen in a table format
-        internal void PrintItemsAsTable()
-        {
-            //int width = -40;
-            Console.WriteLine("{0}| {1,12} | {2,-40} | {3,12:C} | {4,12:C} | {5,12} | {6,12} |",
-                "",
-                "ID",
-                "Description",
-                "Price",
-                "Cost",
-                "Quantity",
-                "Value");
 
-            TextUI.PrintLine();
 
-            foreach (KeyValuePair<string, ShopItem> item in items)
-            {
-                Console.WriteLine("{0}| {1,12} | {2,-40} | {3,12:C} | {4,12:C} | {5,12} | {6,12:C} |", 
-                    "",
-                    item.Value.id, 
-                    item.Value.description, 
-                    item.Value.price, 
-                    item.Value.cost, 
-                    item.Value.quantity,
-                    item.Value.value);
-                /*
-                Console.WriteLine("{0,-5} | {1,-20} | {2,10:C}",
-                    item.Value.id,
-                    item.Value.description,
-                    item.Value.price.ToString());
-                */
-            }
-            TextUI.PrintPause();
-        }
 
 
 
