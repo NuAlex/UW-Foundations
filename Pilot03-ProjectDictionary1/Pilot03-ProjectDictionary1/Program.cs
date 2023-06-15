@@ -40,14 +40,15 @@ namespace Pilot03_ProjectDictionary1
             Console.ReadLine();
             */
 
-
+            Inventory.NewMenu();
             // BEGIN
             do
             {
                 switch (TextUI.DisplayMainMenu())
                 {
                     case 0:
-                        Console.WriteLine("Exit!");
+                        Console.WriteLine("Exiting...");
+                        //goto Skip;
                         return;
                     case 1:
                         TextUI.PrintTitle(PetShop.ShopName);
@@ -71,8 +72,9 @@ namespace Pilot03_ProjectDictionary1
                 }
             }
             while (true);
-
             /*
+            Skip:
+
             Console.WriteLine("Window size = {0} x {1}", Console.WindowWidth, Console.WindowHeight);
             Console.WriteLine("Encoding CodePage {0} / {1}", Console.OutputEncoding.CodePage, Console.OutputEncoding.WindowsCodePage);
 
