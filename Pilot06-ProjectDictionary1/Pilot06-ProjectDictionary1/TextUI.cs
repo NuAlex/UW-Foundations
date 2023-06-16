@@ -66,6 +66,7 @@ namespace Pilot06_ProjectDictionary1
             Console.Write("\n >> ");
         }
 
+        /*
         public static int DisplayMainMenu()
         {
             string menuChoice;
@@ -91,8 +92,40 @@ namespace Pilot06_ProjectDictionary1
 
             return selectedOption;
         }
+        */
+        public static ConsoleKey DisplayMainMenu()
+        {
+            // Build options
+            Dictionary<ConsoleKey, string> menu = new Dictionary<ConsoleKey, string>();
+            menu.Add(ConsoleKey.A, "    (A)dd Item");
+            menu.Add(ConsoleKey.R, "    (R)emove Item");
+            menu.Add(ConsoleKey.C, "    (C)hange Item");
+            menu.Add(ConsoleKey.L, "    (L)ist Items");
+            menu.Add(ConsoleKey.S, "    (S)earch Items");
+            menu.Add(ConsoleKey.Oem102, ""); // line space
+            menu.Add(ConsoleKey.X, "    E(X)IT");
 
+            // Display menu options
+            foreach (var o in menu)
+            {
+                Console.WriteLine(o.Value);
+            }
 
+            // Get option from user
+            ConsoleKeyInfo info;
+            string option;
+            do
+            {
+                info = Console.ReadKey(true);
+                if (menu.TryGetValue(info.Key, out option))
+                {
+                    //Console.WriteLine(option);
+                    return info.Key;
+                }
+            }
+            while (true);
+        }
 
     }
+
 }
