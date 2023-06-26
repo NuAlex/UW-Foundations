@@ -6,3 +6,11 @@ D:\src\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\obj\Debug\Pi
 D:\src\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\obj\Debug\Pilot05-DictionaryFind.csproj.CoreCompileInputs.cache
 D:\src\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\obj\Debug\Pilot05-DictionaryFind.exe
 D:\src\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\obj\Debug\Pilot05-DictionaryFind.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\bin\Debug\Pilot05-DictionaryFind.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\bin\Debug\Pilot05-DictionaryFind.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\bin\Debug\Pilot05-DictionaryFind.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\obj\Debug\Pilot05-DictionaryFind.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\obj\Debug\Pilot05-DictionaryFind.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\obj\Debug\Pilot05-DictionaryFind.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\obj\Debug\Pilot05-DictionaryFind.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot05-DictionaryFind\Pilot05-DictionaryFind\obj\Debug\Pilot05-DictionaryFind.pdb

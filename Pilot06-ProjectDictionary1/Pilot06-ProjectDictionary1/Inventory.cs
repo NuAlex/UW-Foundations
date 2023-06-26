@@ -10,11 +10,10 @@ namespace Pilot06_ProjectDictionary1
 {
     internal class Inventory
     {
-        public Inventory(string Name)
-        {
-            ShopName = Name;
-        }
-
+        // TODO
+        // - review comments and unused functions
+        // - pause list item if more than 10 lines?
+        
         // Data structure
         public struct ShopItem
         {
@@ -26,10 +25,7 @@ namespace Pilot06_ProjectDictionary1
             public decimal value { get => price * quantity; }
         }
 
-        Dictionary<string, ShopItem> items = new Dictionary<string, ShopItem>();
-
-        // Variables
-        public readonly string ShopName;
+        internal Dictionary<string, ShopItem> items = new Dictionary<string, ShopItem>();
 
         // Constants 
         private const bool AllowNullOrEmpty = true; // Used in ReadUserInput(out string) to allow or prevent an empty user input
@@ -63,7 +59,7 @@ namespace Pilot06_ProjectDictionary1
                               $"    Description: {item.description}\n" +
                               $"    Price:       {item.price:C}\n" +
                               $"    Cost:        {item.cost:C}\n" +
-                              $"    Quantity:    {item.quantity}\n");
+                              $"    Quantity:    {item.quantity}");
         }
 
         // Print a Shop Item including item's Value property
@@ -71,6 +67,8 @@ namespace Pilot06_ProjectDictionary1
         {
             PrintItemAsList(item);
             Console.WriteLine($"    Value:       {item.value}");
+            Console.WriteLine();
+            //TextUI.PrintPause();
             /* TODO TEST
             Console.WriteLine();
             Console.WriteLine($"    Id:          {item.id}\n" +
@@ -83,25 +81,9 @@ namespace Pilot06_ProjectDictionary1
         }
 
 
-        // Overload to print all items of this class
-        internal void PrintItemsAsTable()
-        {
-            PrintItemsAsTable(items);
-        }
-
         // Show all items on the screen in a table format
         internal void PrintItemsAsTable(Dictionary<string, ShopItem> items)
         {
-            /* int width = -40;
-            Console.WriteLine("{0}| {1,12} | {2,-40} | {3,12:C} | {4,12:C} | {5,12} | {6,12} |",
-                "",
-                "ID",
-                "Description",
-                "Price",
-                "Cost",
-                "Quantity",
-                "Value");
-            */
             var v = TextUI.VerticalLine;
             Console.WriteLine($"{""}{v} {"ID",12} {v} {"Description",-40} {v} {"Price",12:C} {v} {"Cost",12:C} {v} {"Quantity",12} {v} {"Value",12} {v}");
 
@@ -201,6 +183,7 @@ namespace Pilot06_ProjectDictionary1
                 chars.AddRange(input.ToCharArray());
             }
 
+            TextUI.ClearKeyboardBuffer();
             while (true)
             {
                 info = Console.ReadKey(true);
@@ -218,7 +201,9 @@ namespace Pilot06_ProjectDictionary1
                     break;
                 }
                 //Here you need create own checking of symbols
-                else if (char.IsLetterOrDigit(info.KeyChar) || char.IsPunctuation(info.KeyChar))
+                else if (char.IsLetterOrDigit(info.KeyChar) || 
+                         char.IsPunctuation(info.KeyChar) ||
+                         char.IsWhiteSpace(info.KeyChar))
                 {
                     Console.Write(info.KeyChar);
                     chars.Add(info.KeyChar);
@@ -243,19 +228,6 @@ namespace Pilot06_ProjectDictionary1
             inputStr = EditReadLine(inputStr);
             int.TryParse(inputStr, out int result);
             return result;
-        }
-
-        // Confirms user operation [y/n]
-        private static ConsoleKey ConfirmOperation(string operation)
-        {
-            ConsoleKey response;
-            Console.Write(operation);
-            do
-            {
-                response = Console.ReadKey(true).Key;   // true is intercept key but dont show it, false shows the key
-            }
-            while (response != ConsoleKey.Y && response != ConsoleKey.N);
-            return response;
         }
 
 
@@ -292,17 +264,19 @@ namespace Pilot06_ProjectDictionary1
         }
 
         // Add new item to Shop list
-        internal void AddShopItem()
+        internal void AddShopItem(string shopName)
         {
             bool itemKeyExists;
             ShopItem newItem = new ShopItem();
 
-            // TODO press escape to cancel/exit
-            Console.WriteLine("    New Shop Item - Type \"c\" to cancel.\n");
+            TextUI.PrintAddOption(shopName);
             // Input item ID - Validate if not null and not duplicate
             do
             {
-                if (!ReadUserInput("    Product ID? ", out newItem.id, !AllowNullOrEmpty)) { return; }
+                if (!ReadUserInput("    Product ID? ", out newItem.id, !AllowNullOrEmpty)) 
+                { 
+                    return; 
+                }
                 itemKeyExists = ContainsKey(newItem.id.ToLower().Trim());
                 if (itemKeyExists)
                 {
@@ -319,22 +293,61 @@ namespace Pilot06_ProjectDictionary1
             items.Add(newItem.id.ToLower().Trim(), newItem);
         }
 
-        // Change a Shop item from the current list
-        internal void ChangeItem()
+
+        // Finds and removes a Shop Item
+        internal void RemoveItem(string shopName)
         {
-            TextUI.PrintTitle(ShopName);
-            Console.WriteLine("    |*|  CHANGE ITEM  |*|\n");
+            string removeItemId;
+
+            TextUI.PrintRemoveOption(shopName);
+
+            if (!FindItemByKey(out removeItemId))
+            {
+                return;
+            }
+
+            ShopItem removeItem = items[removeItemId];
+            RemoveItem(removeItem);
+        }
+
+        // Removes the provided Shop Item
+        internal void RemoveItem(ShopItem removeItem)
+        {
+            Console.WriteLine("\n    Remove item:");
+            PrintItemAsList(removeItem);
+            ConsoleKey response = TextUI.ConfirmOperation("\n    Are you sure you want to PERMANENTLY DELETE this item? [y/n] ");
+
+            if (response == ConsoleKey.Y)
+            {
+                items.Remove(removeItem.id);
+                Console.WriteLine($"\n    Item '{removeItem.id}' removed successfully.");
+                TextUI.PrintPause();
+            }
+        }
+
+
+        // Finds and changes a Shop Item
+        internal void ChangeItem(string shopName)
+        {
             string changeItemId;
+
+            TextUI.PrintChangeOption(shopName);
+            
             if (!FindItemByKey(out changeItemId))
             {
                 return;
             }
-            // TODO press escape to cancel/exit
-            TextUI.PrintTitle(ShopName);
+
             ShopItem changeItem = items[changeItemId];
-            Console.WriteLine("    |*|  CHANGE ITEM  |*|");
             PrintItemAsList(changeItem);
 
+            ChangeItem(changeItem);
+        }
+
+
+        // Change a provided Shop item
+        internal void ChangeItem(ShopItem changeItem)
+        {
             Console.WriteLine();
             Console.Write("    New Description: ");
             changeItem.description = EditReadLine(changeItem.description);
@@ -345,43 +358,82 @@ namespace Pilot06_ProjectDictionary1
             Console.Write("    New Quantity: ");
             changeItem.quantity = EditReadLine(changeItem.quantity);
 
-            ConsoleKey response = ConfirmOperation("\n    Are you sure you want to update this item? [y/n] ");
+            ConsoleKey response = TextUI.ConfirmOperation("\n    Are you sure you want to update this item? [y/n] ");
 
             if (response == ConsoleKey.Y)
             {
-                items[changeItemId] = changeItem;
+                items[changeItem.id] = changeItem;
                 Console.WriteLine($"\n    Item '{changeItem.id}' updated successfully.");
                 TextUI.PrintPause();
             }
         }
 
-
-        // Show all items on the screen
-        internal void RemoveItem()
+        // Print list of all items 
+        internal void ListItems(string shopName)
         {
-            // TODO press escape to cancel/exit
-            string removeItemId;
-            Console.WriteLine("    Remove Shop Item - Type \"c\" to cancel.\n");
-
-            if (!FindItemByKey(out removeItemId))
-            {
-                return;
-            }
-
-            ShopItem removeItem = items[removeItemId];
-            //ConsoleKey response;
-            Console.WriteLine("\n    Remove item:");
-            PrintItemAsList(removeItem);
-            ConsoleKey response = ConfirmOperation("\n    Are you sure you want to PERMANENTLY DELETE this item? [y/n] ");
-
-            if (response == ConsoleKey.Y)
-            {
-                items.Remove(removeItemId);
-                Console.WriteLine($"\n    Item '{removeItem.id}' removed successfully.");
-                TextUI.PrintPause();
-            }
-
+            TextUI.PrintListption(shopName);
+            PrintItemsAsTable(items);
         }
 
+
+        // Search for items 
+        internal void SearchItem(string shopName)
+        {
+            string searchString;
+
+            TextUI.PrintSearchOption(shopName);
+
+            do
+            {
+                if (!ReadUserInput("    Product ID or Description? ", out searchString, !AllowNullOrEmpty))
+                {
+                    return;
+                }
+            }
+            while (string.IsNullOrEmpty(searchString));
+
+            
+            ShopItem result;
+            // Try get item by Key (case-sensitive), if not found search by description (case-insensitive)
+            if (items.TryGetValue(searchString, out result))
+            {
+                // Show a single item as a list of properties
+                PrintItemAsListWithValue(result);
+
+                // Show options to manage item
+                switch (TextUI.PrintSearchMenu())
+                {
+                    case ConsoleKey.R:
+                        Console.WriteLine();
+                        RemoveItem(result);
+                        break;
+                    case ConsoleKey.C:
+                        Console.WriteLine();
+                        ChangeItem(result);
+                        break;
+                    case ConsoleKey.B:
+                        return;
+                    default:
+                        return;
+                }
+            }
+            else
+            {
+                // Try searching any string (case-insensitive) in description 
+                var results = items.Where(kvp => kvp.Value.description.IndexOf(searchString, 0, StringComparison.CurrentCultureIgnoreCase) != -1)
+                           .ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
+                if (results.Count > 0)
+                {
+                    // Show multiple items in as a table of properties
+                    Console.WriteLine();
+                    PrintItemsAsTable(results);
+                }
+                else
+                {
+                    Console.WriteLine("\n    Item not found!");
+                    TextUI.PrintPause();
+                }
+            }
+        }
     }
 }
