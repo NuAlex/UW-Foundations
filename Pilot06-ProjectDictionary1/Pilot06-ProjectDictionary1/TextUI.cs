@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,11 +21,40 @@ namespace Pilot06_ProjectDictionary1
             return s.PadLeft(s.Length + padding / 2, c).PadRight(width, c);
         }
 
+        // Skips all previous input chars
+        public static void ClearKeyboardBuffer()
+        {
+            while (Console.KeyAvailable)
+                Console.ReadKey(false); 
+        }
+
+        // Confirms user operation [y/n]
+        public static ConsoleKey ConfirmOperation(string operation)
+        {
+            ConsoleKey response;
+            Console.Write(operation);
+            TextUI.ClearKeyboardBuffer();
+            do
+            {
+                response = Console.ReadKey(true).Key;   // true is intercept key but dont show it, false shows the key
+            }
+            while (response != ConsoleKey.Y && response != ConsoleKey.N);
+            return response;
+        }
+
+        public static void PrintCancelMessage()
+        {
+            Console.WriteLine("    | Type \"c\" to cancel | \n");
+        }
+
+
         public static void PrintPause()
         {
             Console.Write("\n\n    // Press any key to continue // ");
-            Console.Read();
+            Console.ReadKey();
+            ClearKeyboardBuffer();
         }
+
 
         public static void PrintLine()
         {
@@ -56,45 +86,39 @@ namespace Pilot06_ProjectDictionary1
 
         }
 
-        public static void PrintMenu(List<string> Menu)
-
+        public static void PrintMenuOptions(List<string> menu)
         {
-            foreach (string option in Menu)
+            foreach (string option in menu)
             {
                 Console.WriteLine(option);
             }
             Console.Write("\n >> ");
         }
 
-        /*
-        public static int DisplayMainMenu()
-        {
-            string menuChoice;
-            int selectedOption;
-            bool intParsed;
-            List<string> MenuList = new List<string>
-            {
-                "    1 - Add a shop item",
-                "    2 - Change shop item",
-                "    3 - Remove shop item",
-                "    4 - List shop items",
-                "    0 - Exit"
-            };
 
+        public static ConsoleKey ReadMenuUserInput(Dictionary<ConsoleKey, string> menu)
+        {
+            // Get option from user
+            ClearKeyboardBuffer();
+            ConsoleKeyInfo info;
+            string option;
             do
             {
-                PrintTitle("PET SHOP - LOVELY PUPPIES");
-                PrintMenu(MenuList);
-                menuChoice = Console.ReadLine();
-                intParsed = int.TryParse(menuChoice, out selectedOption);
+                info = Console.ReadKey(true);
+                if (menu.TryGetValue(info.Key, out option))
+                {
+                    //Console.WriteLine(option);
+                    return info.Key;
+                }
             }
-            while (selectedOption < 0 || selectedOption > MenuList.Count - 1 || !intParsed);
-
-            return selectedOption;
+            while (true);
         }
-        */
-        public static ConsoleKey DisplayMainMenu()
+
+
+            public static ConsoleKey PrintMainMenu(string shopName)
         {
+            PrintTitle(shopName);
+            Console.WriteLine("    |=|  MAIN MENU  |=|\n");
             // Build options
             Dictionary<ConsoleKey, string> menu = new Dictionary<ConsoleKey, string>();
             menu.Add(ConsoleKey.A, "    (A)dd Item");
@@ -111,21 +135,67 @@ namespace Pilot06_ProjectDictionary1
                 Console.WriteLine(o.Value);
             }
 
-            // Get option from user
-            ConsoleKeyInfo info;
-            string option;
-            do
-            {
-                info = Console.ReadKey(true);
-                if (menu.TryGetValue(info.Key, out option))
-                {
-                    //Console.WriteLine(option);
-                    return info.Key;
-                }
-            }
-            while (true);
+            return ReadMenuUserInput(menu);
+
         }
 
+        public static ConsoleKey PrintSearchMenu()
+        {
+            //PrintTitle(shopName);
+            //Console.WriteLine("    |=|  MAIN MENU  |=|\n");
+            // Build options
+            Dictionary<ConsoleKey, string> menu = new Dictionary<ConsoleKey, string>();
+            menu.Add(ConsoleKey.R, "    (R)emove Item");
+            menu.Add(ConsoleKey.C, "    (C)hange Item");
+            menu.Add(ConsoleKey.B, "    (B)ack to Main Menu");
+
+            // Display menu options
+            string menuStr = "";
+            foreach (var o in menu)
+            {
+                menuStr += o.Value;
+            }
+            Console.Write(menuStr);
+
+            return ReadMenuUserInput(menu);
+
+        }
+
+
+
+        public static void PrintAddOption(string shopName)
+        {
+            PrintTitle(shopName);
+            Console.WriteLine("    |+|    ADD ITEM    |+|");
+            PrintCancelMessage();
+        }
+
+        public static void PrintRemoveOption(string shopName)
+        {
+            PrintTitle(shopName);
+            Console.WriteLine("    |-|  REMOVE ITEM   |-|");
+            PrintCancelMessage();
+        }
+
+        public static void PrintChangeOption(string shopName)
+        {
+            PrintTitle(shopName);
+            Console.WriteLine("    |*|  CHANGE ITEM   |*|");
+            PrintCancelMessage();
+        }
+
+        public static void PrintListption(string shopName)
+        {
+            PrintTitle(shopName);
+        }
+
+        public static void PrintSearchOption(string shopName)
+        {
+            PrintTitle(shopName);
+            Console.WriteLine("    |~|  SEARCH ITEM   |~|");
+            PrintCancelMessage();
+            Console.WriteLine("    (Search by Product ID is case-sensitive)");
+        }
     }
 
 }

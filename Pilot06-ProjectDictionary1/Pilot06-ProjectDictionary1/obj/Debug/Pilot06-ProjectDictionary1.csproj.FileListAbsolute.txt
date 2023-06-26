@@ -6,3 +6,11 @@ D:\src\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\obj\
 D:\src\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\obj\Debug\Pilot06-ProjectDictionary1.csproj.CoreCompileInputs.cache
 D:\src\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\obj\Debug\Pilot06-ProjectDictionary1.exe
 D:\src\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\obj\Debug\Pilot06-ProjectDictionary1.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\obj\Debug\Pilot06-ProjectDictionary1.csproj.AssemblyReference.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\obj\Debug\Pilot06-ProjectDictionary1.csproj.SuggestedBindingRedirects.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\obj\Debug\Pilot06-ProjectDictionary1.csproj.CoreCompileInputs.cache
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\obj\Debug\Pilot06-ProjectDictionary1.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\obj\Debug\Pilot06-ProjectDictionary1.pdb
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\bin\Debug\Pilot06-ProjectDictionary1.exe.config
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\bin\Debug\Pilot06-ProjectDictionary1.exe
+D:\Users\NunoA\Source\Repos\UW-Foundations\Pilot06-ProjectDictionary1\Pilot06-ProjectDictionary1\bin\Debug\Pilot06-ProjectDictionary1.pdb
