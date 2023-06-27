@@ -1,0 +1,8 @@
+D:\src\UW-Foundations\Lab29-ExceptionHandling\Lab29-ExceptionHandling\bin\Debug\Lab29-ExceptionHandling.exe.config
+D:\src\UW-Foundations\Lab29-ExceptionHandling\Lab29-ExceptionHandling\bin\Debug\Lab29-ExceptionHandling.exe
+D:\src\UW-Foundations\Lab29-ExceptionHandling\Lab29-ExceptionHandling\bin\Debug\Lab29-ExceptionHandling.pdb
+D:\src\UW-Foundations\Lab29-ExceptionHandling\Lab29-ExceptionHandling\obj\Debug\Lab29-ExceptionHandling.csproj.AssemblyReference.cache
+D:\src\UW-Foundations\Lab29-ExceptionHandling\Lab29-ExceptionHandling\obj\Debug\Lab29-ExceptionHandling.csproj.SuggestedBindingRedirects.cache
+D:\src\UW-Foundations\Lab29-ExceptionHandling\Lab29-ExceptionHandling\obj\Debug\Lab29-ExceptionHandling.csproj.CoreCompileInputs.cache
+D:\src\UW-Foundations\Lab29-ExceptionHandling\Lab29-ExceptionHandling\obj\Debug\Lab29-ExceptionHandling.exe
+D:\src\UW-Foundations\Lab29-ExceptionHandling\Lab29-ExceptionHandling\obj\Debug\Lab29-ExceptionHandling.pdb

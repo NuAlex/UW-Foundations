@@ -1,0 +1,8 @@
+D:\src\UW-Foundations\Lab28-Interfaces\Lab28-Interfaces\bin\Debug\Lab28-Interfaces.exe.config
+D:\src\UW-Foundations\Lab28-Interfaces\Lab28-Interfaces\bin\Debug\Lab28-Interfaces.exe
+D:\src\UW-Foundations\Lab28-Interfaces\Lab28-Interfaces\bin\Debug\Lab28-Interfaces.pdb
+D:\src\UW-Foundations\Lab28-Interfaces\Lab28-Interfaces\obj\Debug\Lab28-Interfaces.csproj.AssemblyReference.cache
+D:\src\UW-Foundations\Lab28-Interfaces\Lab28-Interfaces\obj\Debug\Lab28-Interfaces.csproj.SuggestedBindingRedirects.cache
+D:\src\UW-Foundations\Lab28-Interfaces\Lab28-Interfaces\obj\Debug\Lab28-Interfaces.csproj.CoreCompileInputs.cache
+D:\src\UW-Foundations\Lab28-Interfaces\Lab28-Interfaces\obj\Debug\Lab28-Interfaces.exe
+D:\src\UW-Foundations\Lab28-Interfaces\Lab28-Interfaces\obj\Debug\Lab28-Interfaces.pdb
