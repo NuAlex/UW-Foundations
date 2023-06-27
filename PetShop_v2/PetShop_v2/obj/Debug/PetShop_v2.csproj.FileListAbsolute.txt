@@ -1,0 +1,8 @@
+D:\src\UW-Foundations\PetShop_v2\PetShop_v2\bin\Debug\PetShop_v2.exe.config
+D:\src\UW-Foundations\PetShop_v2\PetShop_v2\bin\Debug\PetShop_v2.exe
+D:\src\UW-Foundations\PetShop_v2\PetShop_v2\bin\Debug\PetShop_v2.pdb
+D:\src\UW-Foundations\PetShop_v2\PetShop_v2\obj\Debug\PetShop_v2.csproj.AssemblyReference.cache
+D:\src\UW-Foundations\PetShop_v2\PetShop_v2\obj\Debug\PetShop_v2.csproj.SuggestedBindingRedirects.cache
+D:\src\UW-Foundations\PetShop_v2\PetShop_v2\obj\Debug\PetShop_v2.csproj.CoreCompileInputs.cache
+D:\src\UW-Foundations\PetShop_v2\PetShop_v2\obj\Debug\PetShop_v2.exe
+D:\src\UW-Foundations\PetShop_v2\PetShop_v2\obj\Debug\PetShop_v2.pdb

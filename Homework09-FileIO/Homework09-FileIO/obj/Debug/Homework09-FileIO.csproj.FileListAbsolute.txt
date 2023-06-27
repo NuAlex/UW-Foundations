@@ -1,0 +1,8 @@
+D:\src\UW-Foundations\Homework09-FileIO\Homework09-FileIO\bin\Debug\Homework09-FileIO.exe.config
+D:\src\UW-Foundations\Homework09-FileIO\Homework09-FileIO\bin\Debug\Homework09-FileIO.exe
+D:\src\UW-Foundations\Homework09-FileIO\Homework09-FileIO\bin\Debug\Homework09-FileIO.pdb
+D:\src\UW-Foundations\Homework09-FileIO\Homework09-FileIO\obj\Debug\Homework09-FileIO.csproj.AssemblyReference.cache
+D:\src\UW-Foundations\Homework09-FileIO\Homework09-FileIO\obj\Debug\Homework09-FileIO.csproj.SuggestedBindingRedirects.cache
+D:\src\UW-Foundations\Homework09-FileIO\Homework09-FileIO\obj\Debug\Homework09-FileIO.csproj.CoreCompileInputs.cache
+D:\src\UW-Foundations\Homework09-FileIO\Homework09-FileIO\obj\Debug\Homework09-FileIO.exe
+D:\src\UW-Foundations\Homework09-FileIO\Homework09-FileIO\obj\Debug\Homework09-FileIO.pdb
